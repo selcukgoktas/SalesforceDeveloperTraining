@@ -1,0 +1,54 @@
+<!--
+    @description       : AURA5 - Contact Creation with Lightning Design System and Salesforce Component Library
+    @author            : Selçuk GÖKTAŞ
+    @group             : 
+    @last modified on  : 07-02-2022
+    @last modified by  : Selçuk GÖKTAŞ
+-->
+
+
+
+<aura:component controller="AURA5_ContactServerController" implements="force:appHostable,
+flexipage:availableForAllPageTypes,
+flexipage:availableForRecordHome,
+force:hasRecordId,forceCommunity:availableForAllPageTypes,
+force:lightningQuickAction" access="global">
+
+
+
+<aura:attribute name="sContact" type="Contact" default="{
+'sobjectType':'Contact',
+'FirstName':'',
+'LastName':'',
+'Phone':'',
+'Email':''
+
+
+}" />
+
+
+
+<aura:attribute name="Message" type="String" default="Contact Creation"/>
+<aura:attribute name="contid" type="String" />
+
+
+<lightning:card variant="Narrow" title="Create Contact" iconName="standard:contact" footer="{!v.Message}">
+    <aura:set attribute="actions">
+        <lightning:buttonIcon iconName="utility:add" variant="border-filled" alternativeText="Create Contact" onclick="{!c.createContactClientController}"/>
+    </aura:set>
+    <p class="slds-p-horizontal_small">
+        
+        <lightning:input name="firstName" label="First Name" placeholder="type first name..." value="{!v.sContact.FirstName}" />
+        <lightning:input name="lastName" label="Last Name" placeholder="type Last name..." value="{!v.sContact.LastName}" />
+        <lightning:input name="phone" label="phone" placeholder="type Phone number..." value="{!v.sContact.Phone}" />
+        <lightning:input name="email" label="Email" placeholder="type Email ..." value="{!v.sContact.Email}" />
+      
+
+
+    </p>
+</lightning:card>
+
+
+
+
+</aura:component>	

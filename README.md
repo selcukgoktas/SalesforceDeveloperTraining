@@ -80,3 +80,11 @@ After deployment you should open AURA4 application and click preview button.
 You will see contact details. Fill the details and click create contact button. 
 If you make null required field you will see the error on the screen. 
 
+### Aura5 - Contact Create with Server Controller and Lightning Component Styles
+After deployment you should open AURA5 application and click preview button. 
+You will see contact details. Fill the details and click create contact button. 
+If you make null required field you will see the error on the screen. 
+You will see change on the UI this time. We will create our components either [Component Library](https://developer.salesforce.com/docs/component-library/overview/components) or [Lightnin Design System](https://www.lightningdesignsystem.com/)
+
+
+
