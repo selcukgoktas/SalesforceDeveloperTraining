@@ -12,11 +12,26 @@ Selçuk GÖKTAŞ [Linkedin](https://www.linkedin.com/in/selcukgoktas/)
 
 ## APEX
 
+
 ### Trigger1 - Empty Trigger template
 You can use this trigger for every purpose. Just change the related object and use it. 
 It contains **switch when** expression. It's metadata file make this **trigger inactive**.
 If you want to make this activated you should go to the object manager related object and check triggers is active or not. 
 You can also change metadata file to activate trigger before deployment.   
+
+
+### ASYNC1 - Future Method
+Async Apex future method example.
+
+### ASYNC2 - Queueable Class
+Simple Example Template for Queueable Class. You should comment out call functions and paste them into salesforce developer console anonmyous window.
+
+### ASYNC3 - Batch Class
+Simple Example Template for Batch Class. You should comment out call functions and paste them into salesforce developer console anonmyous window.
+
+### ASYNC4 - Schedule Class
+Simple Example Template for Schedule Class. You should comment out call functions and paste them into salesforce developer console anonmyous window.
+
 
 
 ## Visual Force 1 - Account Contact Create and Delete 
