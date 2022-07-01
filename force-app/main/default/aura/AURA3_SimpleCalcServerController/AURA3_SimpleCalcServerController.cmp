@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component controller="AURA3_SimpleCalcServerController">
+
+    <aura:attribute name="_x" type="decimal" />
+    <aura:attribute name="_y" type="decimal" />
+    <aura:attribute name="result" type="decimal" />
+    
+
+    <ui:inputNumber label="First Number" aura:id="x" value="{!v._x}" />
+    <ui:inputNumber label="Second Number" aura:id="y" value="{!v._y}" />
+    <ui:inputNumber label="Result" aura:id="result" value="{!v.result}" />
+        
+    <ui:button label="+" press="{!c.clientsum}" class="button" />
+    <ui:button label="-" press="{!c.clientsub}" class="button" />
+    <ui:button label="x" press="{!c.clientmul}" class="button" />
+    <ui:button label="/" press="{!c.clientdiv}" class="button" />
+
+
+
+</aura:component>	
