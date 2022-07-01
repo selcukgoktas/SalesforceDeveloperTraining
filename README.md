@@ -9,6 +9,16 @@ Selçuk GÖKTAŞ [Linkedin](https://www.linkedin.com/in/selcukgoktas/)
 
 
 # Contents
+
+## APEX
+
+### Trigger1 - Empty Trigger template
+You can use this trigger for every purpose. Just change the related object and use it. 
+It contains **switch when** expression. It's metadata file make this **trigger inactive**.
+If you want to make this activated you should go to the object manager related object and check triggers is active or not. 
+You can also change metadata file to activate trigger before deployment.   
+
+
 ## Visual Force 1 - Account Contact Create and Delete 
 Bulk Account and Contact creation with custom apex controller. It contains test code also.
 All related visualforce page, apex class and test apex classes are prefix with **VF1_**
