@@ -1,0 +1,142 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+
+
+<apex:page StandardController="Opportunity" extensions="VF2_OppLineItemsCont,VF2_AccCont,VF2_ProductCont" docType="html-5.0">
+
+    <img src="https://triforcia.com/wp-content/uploads/2022/03/triforcia-logo-300x69.png" width="300px" height="69px" />
+
+    <hr />
+
+
+
+
+    <apex:form>
+
+        <apex:pageblock>
+            <apex:pageblockButtons>
+                <apex:commandButton value="Save" action="{!saveSingleAccount}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+
+
+            </apex:pageblockButtons>
+
+
+            <apex:pageBlockSection columns="1" title="Company Information">
+                <apex:inputfield value="{!singleAcc.name}" Label="Company Name " />
+                <apex:inputfield value="{!singleAcc.BillingStreet}" />
+                <apex:inputfield value="{!singleAcc.BillingCity}" />
+                <apex:inputfield value="{!singleAcc.BillingState}" />
+                <apex:inputfield value="{!singleAcc.BillingPostalCode}" />
+                <apex:inputfield value="{!singleAcc.BillingCountry }" />
+                <apex:inputfield value="{!singleAcc.Phone}" />
+
+
+
+
+            </apex:pageBlockSection>
+
+
+
+        </apex:pageblock>
+
+
+
+
+
+        <apex:pageblock>
+
+            <apex:pageblockButtons>
+                <apex:commandButton value="Save" action="{!saveLineItems}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+
+
+            </apex:pageblockButtons>
+
+
+            <apex:pageBlockSection columns="1" title="Order Details">
+
+
+
+
+
+                <apex:pageblockTable value="{!OLI}" var="loopitem">
+
+
+                    <apex:column value="{!loopitem.Name}" />
+                    <apex:column headerValue="Unit Price">
+                        <apex:inputfield value="{!loopitem.UnitPrice}" /></apex:column>
+                    <apex:column headerValue="Quantity">
+                        <apex:inputfield value="{!loopitem.Quantity}" /></apex:column>
+                    <apex:column value="{!loopitem.TotalPrice}" />
+
+
+
+
+                </apex:pageblockTable>
+
+
+            </apex:pageBlockSection>
+
+
+            <apex:outputPanel id="showAddProductSection" rendered="{!ShowAddProduct}">
+                <apex:pageblockSection columns="4">
+                    <apex:inputText value="{!ProductName}" Label="Product Name " />
+                    <apex:input value="{!ProductPrice}" Label="Unit Price" type="number" />
+                    <apex:commandButton value="Save" action="{!SaveProduct}" />
+
+
+
+
+                </apex:pageblockSection>
+            </apex:outputPanel>
+
+
+
+            <style type="text/css">
+                .sbox {
+                    width: 550px;
+                }
+            </style>
+
+            <apex:pageblockSection columns="3">
+                <apex:selectList value="{!Products}" size="3" multiselect="true" styleClass="sbox">
+                    <apex:selectOptions value="{!items}">
+
+                    </apex:selectOptions>
+
+
+
+                </apex:selectList>
+
+
+                <apex:outputPanel>
+                    <apex:commandButton value="Add" action="{!addLineItems}" />
+                    <br />
+                    <apex:commandButton value="New" action="{!newProduct}" rendered="{!!ShowAddProduct}" />
+                    <apex:commandButton value="Cancel" action="{!newCancel}" rendered="{!ShowAddProduct}" />
+
+
+                </apex:outputPanel>
+
+
+            </apex:pageblockSection>
+
+
+
+
+            <apex:outputfield value="{!opportunity.amount}" label="Total Amount" />
+
+
+
+        </apex:pageblock>
+
+
+    </apex:form>
+
+</apex:page>
