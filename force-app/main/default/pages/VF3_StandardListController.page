@@ -1,0 +1,63 @@
+<!--
+  @description       : Standard List Controller Example.
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<apex:page standardController="Account" recordSetVar="multiAcc">
+
+    <apex:form>
+
+        <apex:selectList value="{!filterid}" size="1">
+
+            <apex:selectOptions value="{!listviewoptions}">
+
+            </apex:selectOptions>
+
+
+
+        </apex:selectList>
+
+        <apex:commandButton value="Filter" />
+        <!-- action="{!list}"  -->
+
+
+
+
+
+        <apex:pageblock>
+            <apex:pageblockButtons>
+                <apex:commandButton value="First" action="{!first}" />
+                <apex:commandButton value="Previous" action="{!previous}" />
+                <apex:commandButton value="Next" action="{!next}" />
+                <apex:commandButton value="Last" action="{!last}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+                <apex:commandButton value="Save" action="{!save}" />
+
+            </apex:pageblockButtons>
+
+
+            <apex:dataList value="{!multiAcc}" var="loopAcc" type="1">
+
+                <apex:pageBlockSection columns="4">
+                    <apex:inputField value="{!loopAcc.Name}" />
+                    <apex:inputField value="{!loopAcc.Phone}" />
+                    <apex:inputField value="{!loopAcc.WebSite}" />
+                    <apex:inputField value="{!loopAcc.AnnualRevenue}" />
+
+
+                </apex:pageBlockSection>
+
+            </apex:dataList>
+
+
+        </apex:pageblock>
+
+
+
+
+
+    </apex:form>
+
+</apex:page>

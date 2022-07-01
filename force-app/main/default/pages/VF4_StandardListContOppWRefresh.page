@@ -1,0 +1,64 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<apex:page standardController="Opportunity" recordSetVar="multiOp" tabStyle="Opportunity" sidebar="false">
+
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageMessages />
+
+            <apex:pageBlockSection>
+                <apex:panelGrid columns="2">
+                    <apex:outputLabel value="View" />
+                    <apex:selectList value="{!filterId}" size="1">
+                        <apex:actionSupport event="onchange" reRender="opportunity_table" />
+                        <apex:selectOptions value="{!listviewoptions}" />
+                    </apex:selectList>
+
+
+                </apex:panelGrid>
+
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons>
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton value="First" action="{!first}" />
+                <apex:commandButton value="Previous" action="{!previous}" />
+                <apex:commandButton value="Next" action="{!next}" />
+                <apex:commandButton value="Last" action="{!last}" />
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockTable value="{!multiOp}" var="loopOp" id="opportunity_table">
+                <apex:column headerValue="Name">
+                    <apex:inputField value="{!loopOp.name}" />
+                </apex:column>
+                <apex:column headerValue="Amount">
+                    <apex:inputField value="{!loopOp.Amount}" />
+                </apex:column>
+                <apex:column headerValue="Close Date">
+                    <apex:inputField value="{!loopOp.CloseDate}" />
+                </apex:column>
+                <apex:column headerValue="Stage">
+                    <apex:inputField value="{!loopOp.StageName}" />
+                </apex:column>
+
+            </apex:pageBlockTable>
+
+
+
+
+        </apex:pageBlock>
+
+
+
+
+    </apex:form>
+
+
+
+</apex:page>
