@@ -1,0 +1,156 @@
+<!--
+  @description       : 1 - Visual Force Simple Project 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<apex:page controller="VF1_AccountContactController" docType="html-5.0">
+
+
+
+    <apex:tabPanel >
+
+
+        <apex:tab label="Account" name="account" id="account">
+            <apex:form >
+
+
+
+
+                <apex:pageBlock title="Account">
+
+
+                    <apex:pageBlockSection title="Create Test Data" columns="5">
+
+                        <apex:pageBlockSectionItem >
+                            <apex:outputText > Name Prefix </apex:outputText>
+                        </apex:pageBlockSectionItem>
+
+
+                        <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!namePrefix}" label="NamePref" id="NamePref" />
+                        </apex:pageBlockSectionItem>
+
+                        <apex:pageBlockSectionItem >
+                            <apex:outputText > How Many </apex:outputText>
+                        </apex:pageBlockSectionItem>
+
+
+                        <apex:pageBlockSectionItem >
+                            <apex:input value="{!totalCount}" label="How Many" id="totalCount" />
+                        </apex:pageBlockSectionItem>
+
+                        <apex:pageBlockSectionItem >
+                            <apex:commandButton value="Create" action="{!create}" />
+                        </apex:pageBlockSectionItem>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Show Data" columns="3">
+
+                        <apex:pageBlockSectionItem >
+                            <apex:outputText > Search Name </apex:outputText>
+                        </apex:pageBlockSectionItem>
+
+                        <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!containName}" label="containName" id="containName" />
+                        </apex:pageBlockSectionItem>
+
+                        <apex:pageBlockSectionItem >
+                            <apex:commandButton value="Search" action="{!searchAccountName}" />
+                            <apex:commandButton value="Delete" action="{!DeleteAccount}" />
+                        </apex:pageBlockSectionItem>
+
+
+
+                    </apex:pageBlockSection>
+
+
+                    <apex:pageBlockTable value="{!multiAcc}" var="singleAcc">
+                        <apex:column value="{!singleAcc.Name}" />
+                        <apex:column value="{!singleAcc.Phone}" />
+
+
+                    </apex:pageBlockTable>
+
+
+
+
+
+
+                </apex:pageBlock>
+
+
+
+
+
+
+
+
+            </apex:form>
+
+        </apex:tab>
+
+
+
+        <apex:tab label="Contact" name="contact" id="contact">
+            <apex:form >
+
+
+
+                <apex:pageBlock title="Contact">
+                    <apex:pageBlockSection title="Create Test Data">
+
+                        <apex:inputText value="{!fName}" label="First Name" id="fName" />
+
+                        <apex:inputText value="{!lName}" label="Last Name" id="lName" />
+
+
+
+                        <apex:input value="{!totalCount}" id="ContactCount" label="How Many" />
+
+                        <apex:commandButton value="Create" action="{!createContact}" />
+
+                    </apex:pageBlockSection>
+
+
+                    <apex:pageBlockSection title="Show Data">
+
+                        <apex:inputText value="{!sfName}" id="firstName" label="First Name" />
+                        <apex:inputText value="{!slName}" id="lastName" label="Last Name" />
+
+                        <apex:commandButton value="Search" action="{!searchContact}" />
+                        <apex:commandButton value="Delete" action="{!deleteContact}" />
+
+                    </apex:pageBlockSection>
+
+
+                    <apex:pageBlockTable value="{!multiContact}" var="singleCont">
+                        <apex:column value="{!singleCont.firstName}" />
+                        <apex:column value="{!singleCont.lastName}" />
+
+
+                    </apex:pageBlockTable>
+
+
+
+
+                </apex:pageBlock>
+
+
+
+
+
+            </apex:form>
+
+        </apex:tab>
+
+
+    </apex:tabPanel>
+
+
+
+
+
+</apex:page>
