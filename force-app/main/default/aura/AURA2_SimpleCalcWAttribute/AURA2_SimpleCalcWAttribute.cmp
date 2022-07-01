@@ -1,0 +1,26 @@
+<!--
+  @description       : AURA2 Simple Calculator with Attribute without Design System
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component>
+
+    <aura:attribute name="_x" type="decimal" />
+    <aura:attribute name="_y" type="decimal" />
+    <aura:attribute name="result" type="decimal" />
+    
+    <ui:inputNumber label="First Number" aura:id="x" value="{!v._x}" />
+    <ui:inputNumber label="Second Number" aura:id="y" value="{!v._y}" />
+    <ui:inputNumber label="Result" aura:id="result" value="{!v.result}" />
+    
+
+    
+    <ui:button label="+" press="{!c.sum}" class="button" />
+    <ui:button label="-" press="{!c.sub}" class="button" />
+    <ui:button label="X" press="{!c.mul}" class="button" />
+    <ui:button label="/" press="{!c.div}" class="button" />
+    
+
+</aura:component>	

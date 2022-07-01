@@ -63,3 +63,8 @@ You will see 2 inputbox, you need to write 2 number. Then click the button accor
 There is no any design system. Because of this you can see clean codes. 
 
 
+### Aura2 - Simple Calculator with Attribute Tag
+After deployment you should open AURA1 Application and click preview button.
+You will see 2 inputbox, you need to write 2 number. Then click the button according to your calculations. 
+But this time we will use attribute.
+There is no any design system. Because of this you can see clean codes. 
