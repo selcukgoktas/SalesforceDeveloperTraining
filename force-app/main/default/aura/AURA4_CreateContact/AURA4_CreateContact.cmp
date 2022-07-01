@@ -1,0 +1,34 @@
+<!--
+  @description       : AURA4 - Create Contact via Aura Component without any Design System
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component controller="AURA4_CreateContactServerController">
+    <aura:attribute name="Scontact" type="Contact" default="{
+        'sobjectType':'Contact',
+        'FirstName':'',
+        'LastName':'',
+        'Phone':'',
+        'Email':'',
+
+
+    }" />
+
+    <aura:attribute name="createdContactId" type="String" />
+
+    <ui:InputText label="First Name" value="{!v.Scontact.FirstName}" />
+    <ui:InputText label="Last Name" value="{!v.Scontact.LastName}" />
+    <ui:InputText label="Phone" value="{!v.Scontact.Phone}" />
+    <ui:InputText label="Email" value="{!v.Scontact.Email}" />
+    
+
+    <ui:button label="Create Contact" press="{!c.createContactClient}" class="button" />
+
+  <br />
+  
+  {!v.createdContactId}
+
+    
+</aura:component>	

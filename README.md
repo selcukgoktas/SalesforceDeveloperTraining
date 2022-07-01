@@ -64,13 +64,19 @@ There is no any design system. Because of this you can see clean codes.
 
 
 ### Aura2 - Simple Calculator with Attribute Tag
-After deployment you should open AURA1 Application and click preview button.
+After deployment you should open AURA2 Application and click preview button.
 You will see 2 inputbox, you need to write 2 number. Then click the button according to your calculations. 
 But this time we will use attribute.
 There is no any design system. Because of this you can see clean codes. 
 
 ### Aura3 - Simple Calculator with Server Controller
-After deployment you should open AURA1 Application and click preview button.
+After deployment you should open AURA3 Application and click preview button.
 You will see 2 inputbox, you need to write 2 number. Then click the button according to your calculations. 
 But this time we will use Server Controller. Apex will do the calculation. 
 There is no any design system. Because of this you can see clean codes. 
+
+### Aura4 - Contact Create with Server Controller and Error Handling.
+After deployment you should open AURA4 application and click preview button. 
+You will see contact details. Fill the details and click create contact button. 
+If you make null required field you will see the error on the screen. 
+
