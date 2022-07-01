@@ -1,0 +1,19 @@
+<!--
+  @description       : AURA1 Simple Calculator without any Design System.
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-01-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component>
+
+<ui:inputNumber label="First Number" aura:id="x" />
+<ui:inputNumber label="Second Number" aura:id="y" />
+<ui:inputNumber label="Result" aura:id="result" />
+
+<ui:button label="+" press="{!c.sum}" class="button" />
+<ui:button label="-" press="{!c.sub}" class="button" />
+<ui:button label="x" press="{!c.mul}" class="button" />
+<ui:button label="/" press="{!c.div}" class="button" />
+
+</aura:component>	
