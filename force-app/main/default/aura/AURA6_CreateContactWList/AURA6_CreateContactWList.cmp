@@ -1,0 +1,100 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-02-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component controller="AURA6_ContactController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+
+<aura:attribute name="singleContact" type="Contact" default="
+{
+'sobjectType':'Contact',
+'FirstName':'',
+'LastName':'',
+'Phone':'',
+'Email':'',
+
+}
+"
+/>
+
+<aura:handler name="init" value="{!this}" action="{!c.listcontactCliendController}" />
+
+<aura:attribute name="Message" type="String" default="Contact Creation"/>
+<aura:attribute name="contid" type="String" />
+<aura:attribute name="contactList" type="Contact[]" />
+<aura:attribute name="listMessage" type="String" default="Last Added Contact List" />
+
+<lightning:card variant="Narrow" title="Create Contact" iconName="standard:contact" footer="{!v.Message}">
+<aura:set attribute="actions">
+<lightning:buttonIcon iconName="utility:add" variant="border-filled" alternativeText="Create Contact" onclick="{!c.createContactClientController}"/>
+</aura:set>
+<p class="slds-p-horizontal_small">
+<lightning:input name="firstName" label="First Name" placeholder="type first name..." value="{!v.singleContact.FirstName}" />
+<lightning:input name="lastName" label="Last Name" placeholder="type Last name..." value="{!v.singleContact.LastName}" />
+<lightning:input name="phone" label="phone" placeholder="type Phone number..." value="{!v.singleContact.Phone}" />
+<lightning:input name="email" label="Email" placeholder="type Email ..." value="{!v.singleContact.Email}" />
+</p>
+</lightning:card>
+
+
+
+<lightning:card variant="Narrow" title="Contact List" iconName="standard:contact" footer="{!v.listMessage}">
+
+<p class="slds-p-horizontal_small">
+
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+        <thead>
+          <tr class="slds-line-height_reset">
+            <th class="" scope="col">
+              <div class="slds-truncate" title="First Name">First Name</div>
+            </th>
+            <th class="" scope="col">
+              <div class="slds-truncate" title="Last Name">Last Name</div>
+            </th>
+            <th class="" scope="col">
+              <div class="slds-truncate" title="Phone">Phone</div>
+            </th>
+            <th class="" scope="col">
+              <div class="slds-truncate" title="Email">Email</div>
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.contactList}" var="loopContact" indexVar="index">
+          <tr class="slds-hint-parent">
+            <th data-label="First Name" scope="row">
+              <div class="slds-truncate" title="First Name">
+               {!loopContact.FirstName}
+              </div>
+            </th>
+            <td data-label="Last Name">
+              <div class="slds-truncate" title="Last Name">{!loopContact.LastName} </div>
+            </td>
+            <td data-label="Phone">
+              <div class="slds-truncate" title="Phone">{!loopContact.Phone}</div>
+            </td>
+            <td data-label="Email">
+              <div class="slds-truncate" title="Email">{!loopContact.Email}</div>
+            </td>
+           
+          </tr>
+          </aura:iteration>
+        </tbody>
+      </table>
+    
+
+</p>
+</lightning:card>
+
+
+
+
+
+
+
+
+
+</aura:component>	
