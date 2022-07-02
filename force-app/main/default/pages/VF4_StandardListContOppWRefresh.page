@@ -2,7 +2,7 @@
   @description       : VF4 - Standard List Controller witout Page Redirection
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 07-01-2022
+  @last modified on  : 07-02-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <apex:page standardController="Opportunity" recordSetVar="multiOp" tabStyle="Opportunity" sidebar="false">

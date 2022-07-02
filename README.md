@@ -94,3 +94,5 @@ After deployment you should open AURA6 application and click preview button or
 You can add this component into the lightning page with app builder by drag and drop this component.  
 You will see contact creation component. Fill the details and click create contact button.  
 Additionally you will going to see the latest 10 contact created.
+
+### Aura7 - Pass Data From Ligtning Page to Aura (design Attribute)

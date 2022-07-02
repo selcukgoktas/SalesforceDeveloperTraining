@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Selçuk GÖKTAŞ
  * @group             : 
- * @last modified on  : 07-01-2022
+ * @last modified on  : 07-03-2022
  * @last modified by  : Selçuk GÖKTAŞ
 **/
 
@@ -11,7 +11,9 @@ public with sharing class VF2_OppLineItemsCont {
     private Id oppId=ApexPages.currentPage().getParameters().get('id');
     public List<OpportunityLineItem> OLI;
     public List<PricebookEntry> ProductList;
-     public List<PricebookEntry> addProductList;
+    public List<PricebookEntry> addProductList;
+    public Id pricebookid {get;set;}
+
     
      List<OpportunityLineItem> addOLI = New List<OpportunityLineItem>();
     public String[] Products= new String[]{}; 
@@ -27,8 +29,8 @@ public with sharing class VF2_OppLineItemsCont {
         }
 
        Pricebook2 pb=[SELECT Id, IsDeleted, Name, CreatedDate, CreatedById, LastModifiedDate, LastModifiedById, SystemModstamp, LastViewedDate, LastReferencedDate, IsActive, IsArchived, Description, IsStandard FROM Pricebook2 WHERE IsActive=True and Name LIKE '%Standard%' LIMIT 1]; 
-       
-       ProductList=[SELECT Id, Name, Pricebook2Id, Product2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Pricebook2Id=:pb.id];
+       pricebookid=pb.id;
+       ProductList=[SELECT Id, Name, Pricebook2Id, Product2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Pricebook2Id=:pricebookid];
        OLI = [SELECT Id, OpportunityId, SortOrder, PricebookEntryId, Product2Id, TotalPrice, UnitPrice, ListPrice, Quantity, Name FROM OpportunityLineItem WHERE OpportunityId=:oppId];
       
    
@@ -92,7 +94,7 @@ public with sharing class VF2_OppLineItemsCont {
        
         
         
-           addProductList=[SELECT Id, Name, Pricebook2Id, Product2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Pricebook2Id='01s8c000006HMD8AAO' AND Product2Id=:Products];
+           addProductList=[SELECT Id, Name, Pricebook2Id, Product2Id, UnitPrice, IsActive FROM PricebookEntry WHERE Pricebook2Id=:pricebookid AND Product2Id=:Products];
       
             for (PricebookEntry item:addProductList){
                 OpportunityLineItem singleItem=New OpportunityLineItem();
