@@ -99,3 +99,8 @@ Additionally you will going to see the latest 10 contact created.
 After deployment you should open AURA7 application and click preview button or 
 You can add this component into the lightning page with app builder by drag and drop this component.  
 You will see latest contact list in a comboBox or listbox.
+
+### AURA8 - Work with APEX Properties into Aura 
+After deployment you should open AURA8 application and click preview button or 
+You can add this component into the lightning page with app builder by drag and drop this component.  
+You will also see lightning Data Table Example.
