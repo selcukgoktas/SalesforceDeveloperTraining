@@ -2,7 +2,7 @@
   @description       : AURA8 APEX Property access from AURA
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 07-03-2022
+  @last modified on  : 07-04-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <aura:component controller="AURA8_AccountListServerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
@@ -11,6 +11,8 @@
 <aura:handler name="init" value="{!this}" action="{!c.accountListClientController}" />
 
 <aura:attribute name="columns" type="List"/>
+
+<aura:attribute name="selectedRows" type="List" />
 
 <lightning:card footer="Card Footer" title="Hello">
     <aura:set attribute="actions">
@@ -27,13 +29,19 @@
     </p>
 </lightning:card>
 
+<lightning:card>
 
-<lightning:datatable
-                keyField="id"
-                data="{! v.apexClass.accountList }"
-                columns="{! v.columns }"
-                hideCheckboxColumn="false"/>
+        <lightning:datatable
+                        aura:id="accountTable"
+                        keyField="id"
+                        data="{! v.apexClass.accountList }"
+                        columns="{! v.columns }"
+                        hideCheckboxColumn="false"                        
+                        onrowselection="{! c.updateRowSelection }"
+                    />
 
 
+             
 
+    </lightning:card>
 </aura:component>	
