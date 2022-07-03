@@ -12,7 +12,7 @@ public with sharing class VF2_OppLineItemsCont {
     public List<OpportunityLineItem> OLI;
     public List<PricebookEntry> ProductList;
     public List<PricebookEntry> addProductList;
-    public Id pricebookid {get;set;}
+    public String pricebookid {get;set;}
 
     
      List<OpportunityLineItem> addOLI = New List<OpportunityLineItem>();

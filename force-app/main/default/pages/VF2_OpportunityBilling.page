@@ -2,7 +2,7 @@
   @description       : VF2 - Opportunity Standard Controller with Extensions. Adding product to opportunity is more easy with that.
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 07-01-2022
+  @last modified on  : 07-03-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 
@@ -88,7 +88,12 @@
                 <apex:pageblockSection columns="4">
                     <apex:inputText value="{!ProductName}" Label="Product Name " />
                     <apex:input value="{!ProductPrice}" Label="Unit Price" type="number" />
-                    <apex:commandButton value="Save" action="{!SaveProduct}" />
+                    <apex:commandButton value="Save" action="{!SaveProduct}">
+
+
+                    </apex:commandButton>
+
+
 
 
 
