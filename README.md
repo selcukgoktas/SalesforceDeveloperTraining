@@ -119,3 +119,10 @@ We suggest that use this component into the lightning page.
 You will see the parameters section when you are drag and drop this component into the lightning page.
 Difference with **AURA9** is there is a picklist which show all salesforce objects. 
 This component is a detailed apex file. 
+
+### AURA11 - Lightning Data Service - 1
+After deployment you should open AURA10 application and click preview button or 
+You can add this component into the lightning page with app builder by drag and drop this component.  
+We suggest that use this component into the lightning page.
+You will not see any client controller or apex controller but you will see that there is a huge job to create account or update.  This a kind of standard controller in visualforce. 
+
