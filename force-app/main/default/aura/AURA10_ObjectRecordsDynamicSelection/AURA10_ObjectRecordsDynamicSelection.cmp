@@ -1,0 +1,34 @@
+<!--
+  @description       : AURA9 - Design Component and Pass Data into AURA
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-04-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component controller="AURA10_DynamicRecordsController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="Message" type="String"/>
+
+    <aura:attribute name="Title" type="String" />
+    <aura:attribute name="ObjectName" type="String" default="Account" />
+
+   
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+
+
+    <b>{!v.Title}</b>
+    
+    <lightning:datatable
+    keyField="id"
+    data="{! v.data }"
+    columns="{! v.columns }"
+    hideCheckboxColumn="true"/>
+
+
+
+</aura:component>	

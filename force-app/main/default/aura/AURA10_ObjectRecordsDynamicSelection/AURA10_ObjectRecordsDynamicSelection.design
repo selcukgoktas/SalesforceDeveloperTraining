@@ -1,0 +1,6 @@
+<design:component >
+
+    <design:attribute name="Title" label="Please Enter Title" />
+    <design:attribute name="ObjectName" label="Please Enter Object" datasource="apex://AURA10_PicklistServerController" />
+
+</design:component>

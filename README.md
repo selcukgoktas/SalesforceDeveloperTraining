@@ -112,7 +112,7 @@ We suggest that use this component into the lightning page.
 You will see the parameters section when you are drag and drop this component into the lightning page.
 When you write account this will show account records, when you write opportunity this will list opportunity records.
 
-### AURA10 - Picklist with All available Object as a Parameter
+### AURA10 - Dynamic Record Show with Object Picklist
 After deployment you should open AURA10 application and click preview button or 
 You can add this component into the lightning page with app builder by drag and drop this component.  
 We suggest that use this component into the lightning page.
