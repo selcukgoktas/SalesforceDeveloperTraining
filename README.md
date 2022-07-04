@@ -103,4 +103,19 @@ You will see latest contact list in a comboBox or listbox.
 ### AURA8 - Work with APEX Properties into Aura 
 After deployment you should open AURA8 application and click preview button or 
 You can add this component into the lightning page with app builder by drag and drop this component.  
-You will also see lightning Data Table Example.
+You will also see **lightning Data Table Example with multi Selection**
+
+### AURA9 - Design Component and Pass Data into AURA
+After deployment you should open AURA9 application and click preview button or 
+You can add this component into the lightning page with app builder by drag and drop this component.  
+We suggest that use this component into the lightning page.
+You will see the parameters section when you are drag and drop this component into the lightning page.
+When you write account this will show account records, when you write opportunity this will list opportunity records.
+
+### AURA10 - Picklist with All available Object as a Parameter
+After deployment you should open AURA10 application and click preview button or 
+You can add this component into the lightning page with app builder by drag and drop this component.  
+We suggest that use this component into the lightning page.
+You will see the parameters section when you are drag and drop this component into the lightning page.
+Difference with **AURA9** is there is a picklist which show all salesforce objects. 
+This component is a detailed apex file. 

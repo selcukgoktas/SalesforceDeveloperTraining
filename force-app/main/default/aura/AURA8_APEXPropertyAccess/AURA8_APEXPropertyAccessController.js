@@ -7,7 +7,7 @@
         component.set('v.columns', [
             {label: 'Account Name', fieldName: 'linkName', type: 'url',typeAttributes:{label:{fieldName:'Name'},target:'_blank'}},
             
-            {label: 'Industry', fieldName: 'Industry', type: 'test'}
+            {label: 'Industry', fieldName: 'Industry', type: 'text'}
             
             
         ]);
