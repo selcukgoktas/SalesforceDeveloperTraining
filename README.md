@@ -146,3 +146,8 @@ You will not see any client controller or apex controller but you will see that 
 ### AURA12 - Aura Method
 
 We will use aura method to pass data from one aura component to another component.
+We can pass attribute string,integer,function etc.
+
+### AURA13 - Aura Application Event
+
+We create Aura Application, **Application Event**, Component1 and Component2. One of the component do some action and other component will be informed about this. All component in the same application will be informed about this event.

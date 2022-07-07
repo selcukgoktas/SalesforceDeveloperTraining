@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template">
+  <aura:attribute name="createdcontactid" type="String" />
+  <aura:attribute name="isCreateNew" type="Boolean" />
+</aura:event>

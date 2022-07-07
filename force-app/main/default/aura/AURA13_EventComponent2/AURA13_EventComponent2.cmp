@@ -1,0 +1,51 @@
+<!--
+  @description       : AURA13 Application Event - Component 2 Show the list of contact
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-07-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component
+  controller="AURA13_ContactServerController"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+>
+  <aura:handler
+    name="init"
+    value="{!this}"
+    action="{!c.retrieveClientController}"
+  />
+
+  <aura:handler event="c:AURA13_EVENT" action="{!c.retrieveClientController}" />
+
+  <aura:registerEvent name="AURA13" type="c:AURA13_EVENT" />
+
+  <aura:attribute name="Contactid" type="String" />
+  <aura:attribute name="Message" type="String" />
+  <aura:attribute name="multiContact" type="Contact[]" />
+
+  <aura:attribute name="columns" type="List" />
+
+  <lightning:card
+    variant="Narrow"
+    title="Contact List"
+    iconName="standard:contact"
+    footer="Last 10 Contacts"
+  >
+    <aura:set attribute="actions">
+      <lightning:buttonIcon
+        onclick="{!c.createNewContact}"
+        iconName="utility:add"
+        variant="border-filled"
+        alternativeText="Show More"
+      />
+    </aura:set>
+    <p class="slds-p-horizontal_small">
+      <lightning:datatable
+        keyField="id"
+        data="{! v.multiContact }"
+        columns="{! v.columns }"
+        hideCheckboxColumn="true"
+      />
+    </p>
+  </lightning:card>
+</aura:component>
