@@ -1,0 +1,18 @@
+<!--
+  @description       : AURA12 - Aura Method
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-05-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component
+  controller="AURA12_AccountServerController"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+>
+  <aura:method
+    name="AuraMethodRetrieveAccounts"
+    description="This will retrieve account data"
+  >
+    <aura:attribute name="callback" type="Function" />
+  </aura:method>
+</aura:component>

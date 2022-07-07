@@ -1,0 +1,23 @@
+<!--
+  @description       : AURA12 - Aura Method
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-07-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+>
+  <aura:attribute name="accountRecords" type="Account[]" />
+
+  <c:AURA12_AuraMethod aura:id="childComponent" />
+
+  <aura:iteration items="{!v.accountRecords}" var="item">
+    <div>{!item.Name}</div>
+  </aura:iteration>
+
+  <lightning:button
+    label="Click Here"
+    onclick="{!c.ParentCompClientController}"
+  />
+</aura:component>
