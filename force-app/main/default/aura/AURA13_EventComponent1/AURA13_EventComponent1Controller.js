@@ -38,9 +38,5 @@
   init: function (component, event, helper) {
     var today = $A.localizationService.formatDate(new Date(), "DD-MM-YYYY");
     component.set("v.today", today);
-
-    var firstName = $A.get("$SObjectType.CurrentUser.FirstName");
-    console.log("first name : " + firstName);
-    component.set("v.firstName", firstName);
   }
 });

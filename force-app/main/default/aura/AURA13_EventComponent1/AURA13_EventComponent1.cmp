@@ -14,7 +14,14 @@
 
   <aura:attribute name="visibility" type="Boolean" />
   <aura:attribute name="today" type="Date" />
-  <aura:attribute name="firstName" type="String" />
+
+  <aura:attribute name="currentUser" type="User" />
+  <force:recordData
+    fields="Username,Name, Email"
+    recordId="{!$SObjectType.CurrentUser.Id}"
+    targetFields="{!v.currentUser}"
+    mode="VIEW"
+  />
 
   <aura:handler name="init" action="{!c.init}" value="{!this}" />
   <aura:attribute
@@ -89,7 +96,7 @@
         iconName="standard:connected_apps"
         footer="{!v.today}"
       >
-        Hello Dear {!v.firstName}
+        Hello Dear {!v.currentUser.Name}
       </lightning:card>
     </aura:set>
   </aura:if>
