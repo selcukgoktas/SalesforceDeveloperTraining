@@ -11,4 +11,15 @@
             <target>lightning__Tab</target>
             <target>lightning__Inbox</target>
         </targets>
+
+        <targetConfigs>
+          <targetConfig targets="lightning__AppPage">
+            <property name="Title" type="string" default="Simple Calculator"/>
+          </targetConfig>
+
+          <targetConfig targets="lightning__RecordPage">
+            <property name="Title" type="string" default="Simple Calculator" />
+          </targetConfig>
+
+        </targetConfigs>
 </LightningComponentBundle>

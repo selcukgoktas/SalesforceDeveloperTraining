@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 
 import sum from '@salesforce/apex/LWC05_SimpleCalc.sum';
 import sub from '@salesforce/apex/LWC05_SimpleCalc.sub';
@@ -11,6 +11,8 @@ export default class LWC05_SimpleMath extends LightningElement {
   result;
   errors;
   showErr=false;
+
+  @api Title;
 
   handleChangeNumber(event){
     if(event.target.name==='xnum'){
