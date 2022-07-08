@@ -1,4 +1,4 @@
 <aura:application extends="force:slds">
-    <c:AURA6_CreateContactWlist />
+    <c:AURA6_CreateContactWList />
 
-</aura:application>	
+</aura:application>

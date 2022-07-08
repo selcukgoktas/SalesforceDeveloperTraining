@@ -23,4 +23,4 @@
     <ui:button label="/" press="{!c.div}" class="button" />
     
 
-</aura:component>	
+</aura:component>

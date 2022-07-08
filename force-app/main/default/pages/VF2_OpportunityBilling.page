@@ -16,10 +16,10 @@
 
 
 
-    <apex:form>
+    <apex:form >
 
-        <apex:pageblock>
-            <apex:pageblockButtons>
+        <apex:pageblock >
+            <apex:pageblockButtons >
                 <apex:commandButton value="Save" action="{!saveSingleAccount}" />
                 <apex:commandButton value="Cancel" action="{!cancel}" />
 
@@ -49,9 +49,9 @@
 
 
 
-        <apex:pageblock>
+        <apex:pageblock >
 
-            <apex:pageblockButtons>
+            <apex:pageblockButtons >
                 <apex:commandButton value="Save" action="{!saveLineItems}" />
                 <apex:commandButton value="Cancel" action="{!cancel}" />
 
@@ -120,7 +120,7 @@
                 </apex:selectList>
 
 
-                <apex:outputPanel>
+                <apex:outputPanel >
                     <apex:commandButton value="Add" action="{!addLineItems}" />
                     <br />
                     <apex:commandButton value="New" action="{!newProduct}" rendered="{!!ShowAddProduct}" />

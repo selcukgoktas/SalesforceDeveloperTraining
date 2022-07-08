@@ -1,9 +1,6 @@
 {
   "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
-    }
+    {"path": "./force-app","default": true}
   ],
   "name": "SalesforceDeveloperTraining",
   "namespace": "",

@@ -8,11 +8,7 @@
 
 
 
-<aura:component controller="AURA5_ContactServerController" implements="force:appHostable,
-flexipage:availableForAllPageTypes,
-flexipage:availableForRecordHome,
-force:hasRecordId,forceCommunity:availableForAllPageTypes,
-force:lightningQuickAction" access="global">
+<aura:component controller="AURA5_ContactServerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
 
 
 
@@ -52,5 +48,4 @@ force:lightningQuickAction" access="global">
 
 
 
-</aura:component>	
-
+</aura:component>

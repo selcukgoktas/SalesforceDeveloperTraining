@@ -2,4 +2,4 @@
 
 <c:AURA8_APEXPropertyAccess />
 
-</aura:application>	
+</aura:application>

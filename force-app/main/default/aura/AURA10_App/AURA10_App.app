@@ -2,4 +2,4 @@
 
 <c:AURA10_ObjectRecordsDynamicSelection />
 
-</aura:application>	
+</aura:application>

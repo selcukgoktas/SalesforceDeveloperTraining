@@ -37,4 +37,4 @@
       <b>Selected Value : </b> {!v.selectedContact}
   </div>
 
-</aura:component>	
+</aura:component>

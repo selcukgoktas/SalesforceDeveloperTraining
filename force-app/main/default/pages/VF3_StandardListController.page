@@ -7,7 +7,7 @@
 -->
 <apex:page standardController="Account" recordSetVar="multiAcc">
 
-    <apex:form>
+    <apex:form >
 
         <apex:selectList value="{!filterid}" size="1">
 
@@ -26,8 +26,8 @@
 
 
 
-        <apex:pageblock>
-            <apex:pageblockButtons>
+        <apex:pageblock >
+            <apex:pageblockButtons >
                 <apex:commandButton value="First" action="{!first}" />
                 <apex:commandButton value="Previous" action="{!previous}" />
                 <apex:commandButton value="Next" action="{!next}" />

@@ -2,4 +2,4 @@
 
 <c:AURA11_LightningDataService1 />
 
-</aura:application>	
+</aura:application>

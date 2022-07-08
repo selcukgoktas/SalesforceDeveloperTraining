@@ -16,4 +16,4 @@
 <ui:button label="x" press="{!c.mul}" class="button" />
 <ui:button label="/" press="{!c.div}" class="button" />
 
-</aura:component>	
+</aura:component>

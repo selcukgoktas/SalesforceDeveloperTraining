@@ -1,0 +1,23 @@
+<!--
+  @description       : AURA7 - Combobox Data Table
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-03-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component controller="AURA7_ComboBoxDataTableServerCont" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'New', 'value': 'new'},
+    {'label': 'In Progress', 'value': 'inProgress'},
+    {'label': 'Finished', 'value': 'finished'},
+    ]"/>
+    <aura:attribute name="selectedOption" type="String" />
+
+    <lightning:combobox name="progress" label="Status" value="{!selectedOption}" placeholder="Select Progress" options="{! v.options }" onchange="{! c.handleChange }"/>
+
+    <div>
+        <b>Selected Value : </b> {!v.selectedOption}
+    </div>
+
+</aura:component>

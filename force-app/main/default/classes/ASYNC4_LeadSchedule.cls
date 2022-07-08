@@ -31,4 +31,3 @@ ID JobId=System.schedule('00 00 1 ? * SAT My Cron Text', CronStr, LS);
 List<Sobject> CronJobs =[SELECT Id, TimesTriggered, CronJobDetailId, NextFireTime, PreviousFireTime FROM CronTrigger WHERE Id=:JobId];
 
 System.debug('Jobs : '+ CronJobs); */
-

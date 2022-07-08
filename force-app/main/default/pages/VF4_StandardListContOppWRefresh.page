@@ -7,11 +7,11 @@
 -->
 <apex:page standardController="Opportunity" recordSetVar="multiOp" tabStyle="Opportunity" sidebar="false">
 
-    <apex:form>
-        <apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock >
             <apex:pageMessages />
 
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <apex:panelGrid columns="2">
                     <apex:outputLabel value="View" />
                     <apex:selectList value="{!filterId}" size="1">
@@ -25,7 +25,7 @@
 
             </apex:pageBlockSection>
 
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton value="Save" action="{!save}" />
                 <apex:commandButton value="First" action="{!first}" />
                 <apex:commandButton value="Previous" action="{!previous}" />
