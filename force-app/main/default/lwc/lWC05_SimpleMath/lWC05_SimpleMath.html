@@ -1,0 +1,33 @@
+<!--
+  @description       : LWC05 - Simple Calculator By using APEX
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-09-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="Simle Calculator" icon-name="utility:advanced_function">
+      <lightning-button-icon  onclick={handleClickSum} icon-name="utility:add" variant="border-filled"  slot="actions"></lightning-button-icon>
+      <lightning-button-icon  onclick={handleClickSub} icon-name="utility:dash" variant="border-filled"  slot="actions"></lightning-button-icon>
+      <lightning-button-icon  onclick={handleClickMul}  icon-name="utility:close" variant="border-filled"  slot="actions"></lightning-button-icon>
+      <lightning-button-icon  onclick={handleClickDiv}  icon-name="utility:away" variant="border-filled"  slot="actions"></lightning-button-icon>
+      
+      
+      <p class="slds-p-horizontal_small">
+        <lightning-input onchange={handleChangeNumber} type="number" value={numberX} variant="standard" name="xnum" label="Number 1" placeholder="type here..."></lightning-input>
+        <lightning-input onchange={handleChangeNumber} type="number" value={numberY} variant="standard" name="ynum" label="Number 2" placeholder="type here..."></lightning-input>
+
+
+
+
+      </p>
+
+      <template if:true={showErr}>
+        <div class="slds-m-vertical_medium">
+          <p slot="footer"> {errors} </p>
+        </div>
+    </template>
+
+      <p slot="footer"> {result} </p>
+    </lightning-card>
+</template>

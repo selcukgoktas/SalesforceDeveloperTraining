@@ -170,3 +170,7 @@ Plus we will use **Lightning-datatable** for showing the records.
 If you are using without wiring you should make apex aura annotation without cacheble true.
 **@AuraEnabled(cacheable=true) : with WIRE**
 **@AuraEnabled : without WIRE**
+
+### LWC05 - Call Apex for Simple Calculator
+This will pass the parameters what apex asks and get the returned result that pass these data to the LWC UI.
+
