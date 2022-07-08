@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-09-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+
+  <lightning-card  variant="Narrow"  title="Account" icon-name="standard:account">
+    <lightning-button-icon icon-name="utility:add" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">
+
+      <lightning-datatable
+        key-field="id"
+        data={multiAcc} 
+        columns={columns}></lightning-datatable>
+
+    </p>
+    <p slot="footer">Last 20 Account Records</p>
+  </lightning-card>
+    
+</template>

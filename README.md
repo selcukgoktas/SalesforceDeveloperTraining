@@ -151,3 +151,22 @@ We can pass attribute string,integer,function etc.
 ### AURA13 - Aura Application Event
 
 We create Aura Application, **Application Event**, Component1 and Component2. One of the component do some action and other component will be informed about this. All component in the same application will be informed about this event.
+
+
+### LWC01 - Hello Component
+This is the first LWC Component. 
+
+### LWC02 - Track and API Decorators
+Track decorator is not an obligation after Spring 20 update but still can be used for some place. Object data must be used track decorator.
+
+### LWC03 - WIRE Decorator
+This get data from apex controller. Just retrieve the Last 10 Account records. 
+Apex controller method must be annotate with **@AuraEnabled(cacheable=true)**
+
+
+### LWC04 - With and Without WIRE Decorator
+This will show the difference **with / without** wire decorator call apex controller. 
+Plus we will use **Lightning-datatable** for showing the records.
+If you are using without wiring you should make apex aura annotation without cacheble true.
+**@AuraEnabled(cacheable=true) : with WIRE**
+**@AuraEnabled : without WIRE**

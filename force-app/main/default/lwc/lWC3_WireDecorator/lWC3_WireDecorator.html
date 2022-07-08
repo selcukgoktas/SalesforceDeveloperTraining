@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-09-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+  
+ 
+
+  <lightning-card  variant="Narrow"  title="Accounts" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">
+              <template for:each={multiAccountList} for:item="account">
+                <p key={account.id}>{account.Name}</p>
+            
+            
+            
+              </template>
+
+
+    </p>
+    <p slot="footer">Last 10 Accounts</p>
+  </lightning-card>
+    
+</template>
