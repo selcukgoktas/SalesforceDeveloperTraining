@@ -1,0 +1,31 @@
+<!--
+  @description       : LWC02 - Decorators
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-08-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+      <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+      <p class="slds-p-horizontal_small">
+
+        Track Decorator : {message}
+        <lightning-input onchange={handleMsgChange} value={message} name="message" label="Change Track Decorator" ></lightning-input>
+
+      </p>
+      <p slot="footer">Decorators Examples</p>
+    </lightning-card> <br />
+
+    <lightning-card  variant="Narrow"  title="Simple Calculator" icon-name="standard:account">
+      <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+      <p class="slds-p-horizontal_small">
+        <lightning-input onchange={handleCalculate} type="number" variant="standard" name="firstNumber" label="First Number" placeholder="type here..."></lightning-input>
+        <lightning-input onchange={handleCalculate} type="number" variant="standard" name="secondNumber" label="Second Number" placeholder="type here..."></lightning-input>
+      
+      </p>
+      <p slot="footer">Parent Result : {result}</p>
+      <c-childresult-component resultofparent={result} ></c-childresult-component>
+    
+    </lightning-card>
+</template>
