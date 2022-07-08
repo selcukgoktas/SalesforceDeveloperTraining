@@ -24,7 +24,7 @@ this.multiAcc=undefined;
 }*/
 
 
-// imperatively withoud wiring
+// imperatively without wiring
 connectedCallback(){
   retrieveXAccounts({NumofAcc:20})
   .then(result=>{
