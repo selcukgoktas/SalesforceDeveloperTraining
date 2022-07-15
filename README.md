@@ -174,3 +174,7 @@ If you are using without wiring you should make apex aura annotation without cac
 ### LWC05 - Call Apex for Simple Calculator
 This will pass the parameters what apex asks and get the returned result that pass these data to the LWC UI.
 
+### LWC06 - Lightning Data Service Create Records without APEX
+Create Account with LDS
+ShowToastEvent
+NavigationMixin usages.
