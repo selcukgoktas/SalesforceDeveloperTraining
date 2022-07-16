@@ -180,7 +180,13 @@ ShowToastEvent
 NavigationMixin usages.
 
 ### LWC07 - Quick Update with lightning-record-form
-Read recordid from the page.
+Read recordid from the page. **ACCOUNT**
+Update account record with lightning-record-form
+Show toast message for succesfully update operation.
+
+
+### LWC08 - Quick Update with lightning-record-form
+Read recordid from the page. **CONTACT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
 
