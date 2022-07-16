@@ -178,3 +178,10 @@ This will pass the parameters what apex asks and get the returned result that pa
 Create Account with LDS
 ShowToastEvent
 NavigationMixin usages.
+
+### LWC07 - Quick Update with lightning-record-form
+Read recordid from the page.
+Update account record with lightning-record-form
+Show toast message for succesfully update operation.
+
+
