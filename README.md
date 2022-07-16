@@ -190,4 +190,9 @@ Read recordid from the page. **CONTACT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
 
+### LWC09 - MAP on the Contact Records
+**Map** and **Wire** Decorator to collect the contact data.
+```
+import { getRecord } from 'lightning/uiRecordApi';
+```
 

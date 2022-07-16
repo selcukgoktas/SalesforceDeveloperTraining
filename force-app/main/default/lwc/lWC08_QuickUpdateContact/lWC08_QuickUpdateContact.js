@@ -16,7 +16,7 @@ export default class LWC08_QuickUpdateContact extends LightningElement {
   objectApiName='Contact';
   @api recordId;
 
-  @api fieldList=[firstName,lastName,email,phone,account];
+  @api fieldList=[firstName,lastName,email,phone];
 
   connectedCallback(){
     
