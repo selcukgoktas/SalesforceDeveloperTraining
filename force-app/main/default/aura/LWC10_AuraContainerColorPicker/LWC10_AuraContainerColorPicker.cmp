@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-17-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component>
+  <aura:attribute name="colorCodeText" type="String" />
+  <lightning:card title="Change Color">
+    <aura:set attribute="actions" >
+      <c:colorPickerlwc10 oncolorchange="{!c.applyColorClientController}" />
+
+    </aura:set>
+  </lightning:card>
+
+  <p class="slds-p-horizontal_small">
+    <b style="{!'color:'+v.colorCodeText}">
+      Sending Color Code from LWC to AURA Component  {!v.colorCodeText}
+    </b>
+  </p>
+  
+
+
+</aura:component>	

@@ -196,3 +196,6 @@ Show toast message for succesfully update operation.
 import { getRecord } from 'lightning/uiRecordApi';
 ```
 
+### LWC10 - LWC and AURA interoperability
+Colorpickerlwc10 is a child component and only has a color picker. When you select a color
+it fire an event. Aura component is parent component and when an event fired it will get this and conver the color of the text. There is also aura app to see the preview. All component contain **LWC10** term. 
