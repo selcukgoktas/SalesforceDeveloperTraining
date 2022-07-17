@@ -17,6 +17,9 @@ It contains **switch when** expression. It's metadata file make this **trigger i
 If you want to make this activated you should go to the object manager related object and check triggers is active or not.
 You can also change metadata file to activate trigger before deployment.
 
+### Trigger2 - Account Trigger
+This is an interview Question for Google Salesforce Developer.
+
 ### ASYNC Apex
 
 Async apex has more governor limits. You can work with millions of data some of them. You can check details on the [this link](<https://selcukgoktas.github.io/Salesforce-Developer-Guide/Salesforce%20Developer%20(Module)/APEX%20Async%2083ade181e8164901995d57ec616ae221.html>)
