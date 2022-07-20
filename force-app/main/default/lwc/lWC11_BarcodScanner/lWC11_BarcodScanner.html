@@ -1,0 +1,53 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-20-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+  <div class="slds-text-align_center">
+      <span class="slds-text-heading_large">BarcodeScanner: Multi-Scan</span>
+  </div>
+
+  <!-- After barcode are scanned, their values are displayed here: -->
+  <template if:true={scannedBarcodes}>
+      <div class="slds-var-m-vertical_large slds-var-p-vertical_medium 
+          slds-text-align_center slds-border_top slds-border_bottom">
+          Scanned barcode values are:
+          <span class="slds-text-heading_small">{scannedBarcodesAsString}</span>
+      </div>
+  </template>
+
+  <!-- Static help text -->
+  <div class="slds-text-align_center slds-text-color_weak slds-m-vertical_large">
+      Click <strong>Start a Scanning Session</strong> to open a 
+      barcode scanner camera view. Position a barcode in the scanner 
+      view to scan it.
+
+      <p>Continue scanning items. Click ✖ when there are no
+         more items to scan.</p>
+  </div>
+
+  <!-- Scan button, always enabled -->
+  <div class="slds-align_absolute-center slds-m-vertical_large">
+      <lightning-button
+          variant="brand"
+          class="slds-var-m-left_x-small"
+          icon-name="utility:scan"
+          label="Start a Scanning Session"
+          title="Start scanning barcodes, until there are no more barcodes to scan"
+          onclick={beginScanning}
+      ></lightning-button>
+  </div>
+
+  <lightning-card  variant="Narrow"  title="Scanned Barcods" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+   
+    <template for:each={scannedBarcodes} for:item="barcod">
+      {barcod.value} - {barcod.type}
+    </template>
+
+    <p slot="footer">scanned barcods</p>
+  </lightning-card>
+</template>

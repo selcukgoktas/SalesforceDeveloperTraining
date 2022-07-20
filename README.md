@@ -17,8 +17,11 @@ It contains **switch when** expression. It's metadata file make this **trigger i
 If you want to make this activated you should go to the object manager related object and check triggers is active or not.
 You can also change metadata file to activate trigger before deployment.
 
+
 ### Trigger2 - Account Trigger
 This is an interview Question for Google Salesforce Developer.
+
+
 
 ### ASYNC Apex
 
@@ -202,3 +205,7 @@ import { getRecord } from 'lightning/uiRecordApi';
 ### LWC10 - LWC and AURA interoperability
 Colorpickerlwc10 is a child component and only has a color picker. When you select a color
 it fire an event. Aura component is parent component and when an event fired it will get this and conver the color of the text. There is also aura app to see the preview. All component contain **LWC10** term. 
+
+### LWC11 - LWC Barcod Scanned Template.
+It's empty barcod scanner template. You can valid barcods and see the results on lightning-card as a simple text. But you can create more efficient projects with them. Such as super market stock management or creating billing by only scanning the product barcods. Its up to your imagination.
+

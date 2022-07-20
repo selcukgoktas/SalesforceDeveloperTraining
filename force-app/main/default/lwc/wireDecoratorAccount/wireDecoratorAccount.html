@@ -1,0 +1,37 @@
+<!--
+  @description       : {multiAccountList}
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-18-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    
+<lightning-card  variant="Narrow"  title="Account Records" icon-name="standard:account">
+  <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+  <template for:each={multiAccountList} for:item="singleAcc">
+    <p key={singleAcc.id} class="slds-p-horizontal_small">
+      {singleAcc.Id} - {singleAcc.Name} - {singleAcc.CreatedDate}
+    </p>
+
+
+  </template>
+
+
+  
+  
+  <lightning-datatable
+                key-field="id"
+                data={multiAccountList}
+                columns={columns}>
+        </lightning-datatable>
+  
+  
+
+
+
+
+  <p slot="footer">Last 10 Records</p>
+</lightning-card>
+
+</template>

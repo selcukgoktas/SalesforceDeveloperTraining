@@ -2,7 +2,7 @@
   @description       : LWC01 Hello Component
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 07-08-2022
+  @last modified on  : 07-18-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <template>
@@ -15,8 +15,9 @@
     ></lightning-button-icon>
     <p class="slds-p-horizontal_small">
       Hello LWC Component - Lightning Component Bundle
+      {contactRecord.FirstName}
     </p>
-    <p slot="footer">selcukgoktas.com</p>
+    <p slot="footer">{mywebsite}</p>
   </lightning-card>
 
   <article class="slds-card">
