@@ -1,3 +1,21 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-20-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
 <template>
+  <lightning-card  variant="Narrow"  title="Billing" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
     
+    <img src={barcodUrl} />
+    
+    
+    <p class="slds-p-horizontal_small"> Billing Amount : {opamount}</p>
+    <p class="slds-p-horizontal_small"> Name  : {opname}</p>
+    
+    <p slot="footer">Card Footer</p>
+  </lightning-card>
+   
 </template>

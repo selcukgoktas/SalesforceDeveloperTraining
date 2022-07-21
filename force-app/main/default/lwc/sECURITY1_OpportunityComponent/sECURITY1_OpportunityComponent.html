@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title={ObjectApiName} icon-name="standard:opportunity">
+     
+      <lightning-datatable
+      key-field="id"
+      data={multiOpportunity}
+      columns={columns}>
+</lightning-datatable>
+
+
+      <p slot="footer">Last 10 Opportunity</p>
+    </lightning-card>
+</template>
