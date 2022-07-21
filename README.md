@@ -48,6 +48,9 @@ CronJob
 ### APEX Security 1 - FLS 
 This apex has UI on LWC. **SECURITY1** named LWC component call this apex class and handler. 
 There is also comment sections to show different security implementations and results. 
+Opportunity Object needs **Credit_Card_c** field API name. First give permission System Admin.
+Fill some dummy data to Credit Card field. 
+Then you can check with other users or remove permission then check the results. 
 
 ## Visual Force
 
