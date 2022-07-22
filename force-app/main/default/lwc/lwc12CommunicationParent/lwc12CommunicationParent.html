@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+  <lightning-card  variant="Narrow"  title="PARENT CARD " icon-name="standard:account">
+    <lightning-button-icon  onclick={onclickHandler} icon-name="utility:send" variant="border-filled" alternative-text="Send Data to Child..." slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">I'M parent component</p>
+
+    <lightning-input type="text" name="parentText" onchange={onchangeTextHandler}></lightning-input>
+
+    <c-lwc12-communication-child child-message={message} onchildmessage={childMessageHandler}></c-lwc12-communication-child>
+
+
+    <p slot="footer">child message is : {childMessage}</p>
+  </lightning-card>
+</template>

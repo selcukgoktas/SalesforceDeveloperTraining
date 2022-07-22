@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    
+  <lightning-card  variant="Narrow"  title="CHILD CARD " icon-name="standard:account">
+    <lightning-button-icon  onclick={onclickHandler} icon-name="utility:send" variant="border-filled" alternative-text="Send Data to PARENT..." slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">{childMessage}</p>
+
+
+
+   
+
+    <p slot="footer">Card Footer</p>
+  </lightning-card>
+</template>
