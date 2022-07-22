@@ -52,6 +52,10 @@ Opportunity Object needs **Credit_Card_c** field API name. First give permission
 Fill some dummy data to Credit Card field. 
 Then you can check with other users or remove permission then check the results. 
 
+### APEX Algorithm ( Algo1)
+Check the given number is mystical or not.
+Mystical number is a number where the sum of the individual digits is equals to multiplication of all the digits in the number 
+
 ## Visual Force
 
 ### Visual Force 1 - Account Contact Create and Delete
