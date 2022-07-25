@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-25-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="TODO" icon-name="utility:display_rich_text">
+     
+      <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Enter some text" onchange={textonchangeHandler}></lightning-input>
+    </div>
+      
+      <div class="slds-p-around_medium lgc-bg slds-text-align_right">
+      <lightning-button-icon icon-name="utility:down"  alternative-text="add" title="Add" onclick={additemtoListHandler}></lightning-button-icon>
+    </div>
+    </lightning-card>
+
+
+    <lightning-card  variant="Narrow"  title="LIST OF TODO" icon-name="utility:asset_audit">
+     
+      <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+        <template for:each={todoList} for:item="todo" for:index="index">
+
+          <lightning-layout-item key={todo.id} flexibility="auto" padding="around-small">
+
+            <div class="custom-box slds-box slds-p-around_medium slds-text-align_left">
+              <p id="action" class="slds-box slds-text-heading_small"> 
+                <lightning-icon icon-name={todo.status} alternative-text="Approved" title="Approved" data-index={index} onclick={clickApproveHandler}></lightning-icon>
+                <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" data-index={index} onclick={clickDeleteHandler}></lightning-icon>  {index} - {todo.id} - {todo.item} - </p>
+              
+            </div>
+          </lightning-layout-item>
+          
+          
+        </template>
+    </div>
+      
+      
+    </lightning-card>
+</template>
