@@ -221,3 +221,12 @@ it fire an event. Aura component is parent component and when an event fired it 
 ### LWC11 - LWC Barcod Scanned Template.
 It's empty barcod scanner template. You can valid barcods and see the results on lightning-card as a simple text. But you can create more efficient projects with them. Such as super market stock management or creating billing by only scanning the product barcods. Its up to your imagination.
 
+
+### LWC12 - Communication between parent and child.
+From Parent to child @api decorator is enough but if you want to send data from child to parent you have to use Custom Event.
+
+### LWC13 - Communication between independent component.
+Lightning Message Channel.
+You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
+
+
