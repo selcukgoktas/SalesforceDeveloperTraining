@@ -56,6 +56,11 @@ Then you can check with other users or remove permission then check the results.
 Check the given number is mystical or not.
 Mystical number is a number where the sum of the individual digits is equals to multiplication of all the digits in the number 
 
+
+### REST1 Call another API
+You should add remote site setting  https://gorest.co.in/ this url to run this apex code. 
+And Call apex class from anonymous window.
+
 ## Visual Force
 
 ### Visual Force 1 - Account Contact Create and Delete
@@ -224,9 +229,11 @@ It's empty barcod scanner template. You can valid barcods and see the results on
 
 ### LWC12 - Communication between parent and child.
 From Parent to child @api decorator is enough but if you want to send data from child to parent you have to use Custom Event.
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/reference_decorators
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events
 
 ### LWC13 - Communication between independent component.
 Lightning Message Channel.
 You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
-
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
