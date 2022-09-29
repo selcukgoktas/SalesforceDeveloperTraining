@@ -245,3 +245,5 @@ Lightning Message Channel.
 You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
+### GITHUB USAGE
+This is an example.
