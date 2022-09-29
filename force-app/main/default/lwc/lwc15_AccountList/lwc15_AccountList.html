@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-25-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="Account List" icon-name="standard:account">
+    
+     <template for:each={accounts} for:item="acc">
+      <div key={acc.Id}>
+        <a href="#" data-value={acc.Id} onclick={accountSelectHandler}>{acc.Name}</a>
+      </div>
+     </template>
+      <p slot="footer">Card Footer</p>
+    </lightning-card>
+</template>
