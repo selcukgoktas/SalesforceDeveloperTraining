@@ -11,23 +11,47 @@ public with sharing class BusinessToCustommerTest {
     @TestSetup
     public static void setup() {
 
+        List<String> testAccCon = New List<String>{
+            'Selcuk Goktas',
+            'Ahmet Emin Algıç',
+            'Gökhan Aydın'
+        };
+
         BusinessToCustommer b2c = New BusinessToCustommer();
 
-        b2c.create('Selçuk','Göktaş');
+        b2c.create(testAccCon);
 
     }
 
 
     @isTest
     public static void createTest1(){
-        Account testAcc = [SELECT id, Name FROM Account];
+        List<Account> testAccs = [SELECT id, Name FROM Account];
+        List<String> accNames = New List<String>();
+        List<String> accids = New List<String>();
 
-        Contact testCon = [SELECT id, FirstName, LastName,accountid FROM Contact];
 
-        System.assertEquals('Selçuk', testCon.FirstName);
-        System.assertEquals('Göktaş', testCon.LastName);
-        System.assertEquals('Selçuk Göktaş', testAcc.Name);
-        System.assertEquals(testAcc.id, testCon.accountid);
+
+        for (Account acc:testAccs){
+            accNames.add(acc.name);
+            accids.add(acc.id);
+
+        }
+
+        List<Contact> testCons = [SELECT id, name,accountid FROM Contact];
+
+        for(Contact tcon:testCons){
+            Boolean Name_check=accNames.contains(tcon.name);
+            
+            Boolean accountid_check=accids.contains(tcon.accountid);
+
+            System.assertEquals(true, Name_check);
+        
+            System.assertEquals(true, accountid_check);
+
+        }
+
+      
         
     }
 

@@ -8,15 +8,16 @@ Selçuk GÖKTAŞ [Linkedin](https://www.linkedin.com/in/selcukgoktas/)
 
 # Contents
 
-## APEX
+## APEX and APEX TEST
 
-## APEX 1 (BusinessToCustommer) - Create Account and Contact Together
+### APEX 1 (BusinessToCustommer) - Create Account and Contact Together
 We know the person account but we don't prefer to use it in this scenario. So we create an apex class to create account and contact together with the same name. 
 
-## TEST 1 (BusinessToCustommerTest) - Create Account and Contact Apex Class Test
+### TEST 1 (BusinessToCustommerTest) - Create Account and Contact Apex Class Test
 We have an apex class which name is **BusinessToCustommer** and we have method to create account and contact together in place of person account. ( without using person account ) . For this test Class we are going to test this apex class.
 
 
+## APEX TRIGGER
 
 ### Trigger1 - Empty Trigger template
 
