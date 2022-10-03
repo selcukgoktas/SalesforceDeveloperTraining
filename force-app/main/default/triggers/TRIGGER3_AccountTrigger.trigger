@@ -11,10 +11,20 @@ trigger TRIGGER3_AccountTrigger on Account (before insert) {
   switch on Trigger.operationType {
     when BEFORE_INSERT {
       
+      /*  V1 do the job inside the trigger
       for(Account acc:Trigger.New){
-        acc.Name = acc.Name.toUpperCase();
+        // acc.Name = acc.Name.toUpperCase();
 
       }
+      */
+
+      // v2 do the job with trigger helper ( handler )
+
+      TRIGGER3_AccountTriggerHelper accHelper = New TRIGGER3_AccountTriggerHelper();
+
+        accHelper.upperCaseAccount(Trigger.New);
+
+        
     }
     when AFTER_INSERT {  }
     when BEFORE_UPDATE { }

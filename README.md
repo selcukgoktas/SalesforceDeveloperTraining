@@ -30,6 +30,12 @@ You can also change metadata file to activate trigger before deployment.
 ### Trigger2 - Account Trigger
 This is an interview Question for Google Salesforce Developer.
 
+### Trigger3 - Account Trigger
+v1 - Simple Before update make the account name toUpperCase()
+v2 - Do the same thing with trigger helper file and add phone field error.
+
+
+
 
 
 ### ASYNC Apex
