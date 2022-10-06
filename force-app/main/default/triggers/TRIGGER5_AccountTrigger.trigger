@@ -5,7 +5,7 @@
  * @last modified on  : 10-06-2022
  * @last modified by  : Selçuk GÖKTAŞ
 **/
-trigger TRIGGER5_AccountTrigger on Account (before insert) {
+trigger TRIGGER5_AccountTrigger on Account (before insert,before update,before delete, after insert,after update, after undelete) {
    
     if(Trigger.isBefore){
         
