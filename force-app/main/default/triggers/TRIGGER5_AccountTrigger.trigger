@@ -1,11 +1,4 @@
-/**
- * @description       : 
- * @author            : Selçuk GÖKTAŞ
- * @group             : 
- * @last modified on  : 10-06-2022
- * @last modified by  : Selçuk GÖKTAŞ
-**/
-trigger TRIGGER5_AccountTrigger on Account (before insert,before update,before delete, after insert,after update, after undelete) {
+trigger TRIGGER5_AccountTrigger on Account (before insert) {
    
     if(Trigger.isBefore){
         
@@ -13,7 +6,7 @@ trigger TRIGGER5_AccountTrigger on Account (before insert,before update,before d
         
         if(Trigger.isUpdate){}
         
-        if(Trigger.isDelete){}
+         if(Trigger.isDelete){}
         
     }
     

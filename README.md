@@ -41,6 +41,9 @@ Trigger and Trigger Helper file will handle the job together.  We have 2 option 
 ### Trigger5 - Account Trigger
 Empty Trigger template to show the differences between switch on operation type when and if isbefore isafter
 
+### Trigger6 - Contact Trigger
+If there is no phone on the contact record get phone from related account record and update phone field. 
+
 
 ### ASYNC Apex
 
