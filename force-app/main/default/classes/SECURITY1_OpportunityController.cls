@@ -1,5 +1,5 @@
 /**
- * @description       : with sharing respecting sharing data. But its call another helper class. So Helper Class must be inherited sharing 
+ * @description       : 
  * @author            : Selçuk GÖKTAŞ
  * @group             : 
  * @last modified on  : 07-21-2022

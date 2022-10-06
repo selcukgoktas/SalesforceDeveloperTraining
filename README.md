@@ -38,7 +38,8 @@ v2 - Do the same thing with trigger helper file and add phone field error.
 With this trigger we will check the phone field of the Lead record then if it is empty we will create a task to the lead owner. 
 Trigger and Trigger Helper file will handle the job together.  We have 2 option with trigger.new and trigger.newMap. So we create 2 method to read the triggered lead records. Then use another method to create task. 
 
-
+### Trigger5 - Account Trigger
+Empty Trigger template to show the differences between switch on operation type when and if isbefore isafter
 
 
 ### ASYNC Apex

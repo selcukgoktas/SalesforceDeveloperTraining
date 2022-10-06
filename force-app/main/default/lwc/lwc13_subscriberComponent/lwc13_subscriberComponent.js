@@ -34,6 +34,8 @@ export default class Lwc13_subscriberComponent extends LightningElement {
 
   handleMessage(message){
     console.log('------------------------------------------');
+    console.log(this.subscription);
+    console.log(JSON.stringify(this.subscription));
     
     console.log(message);
     console.log(JSON.stringify(message));

@@ -1,8 +1,5 @@
 /**
  * @description       : 
- * 
- * Get bearer token with this anonymous window code : System.debug(System.UserInfo.getSessionId().SubString(15));
- * 
  * @author            : Selçuk GÖKTAŞ
  * @group             : 
  * @last modified on  : 07-27-2022

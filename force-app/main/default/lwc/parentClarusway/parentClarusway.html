@@ -1,0 +1,31 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 07-23-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+  
+  <lightning-card  variant="Narrow"  title="Clarusway" icon-name="utility:classic_interface">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">I'm Parent Component </p>
+
+    <br />
+    <br />
+    <br />
+    
+
+            <c-child-salesforce-course cohort-name="Cohort 1 Pioneer">
+
+              
+            </c-child-salesforce-course>
+    
+    <br />
+    <br />
+    <br />
+    
+    <p slot="footer">Card Footer</p>
+  </lightning-card>
+
+</template>

@@ -1,5 +1,5 @@
 import { LightningElement,track,api,wire } from 'lwc';
-import { getRecord } from 'lightning/uiRecordApi';
+import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 
 import FirstName from '@salesforce/schema/Contact.FirstName';
 import LastName from '@salesforce/schema/Contact.LastName';

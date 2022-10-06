@@ -27,7 +27,6 @@ public with sharing class REST1_OpenAPI {
 
         if(res.getStatusCode()==200){
             System.debug(res.getBody());
-            
         }
 
         

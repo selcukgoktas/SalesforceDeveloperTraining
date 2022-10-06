@@ -9,7 +9,7 @@
 
 public class REST3_AuthAPI {
    
-    public static String callrest2(){
+    public static Integer callrest2(){
         String endpoint='https://dreamsolution-dev-ed.my.salesforce.com/services/apexrest/accountservice?accountid=0018d00000DEmXtAAL';
         Http http=New Http();
         HttpRequest req= New HttpRequest();
@@ -23,8 +23,6 @@ public class REST3_AuthAPI {
 
         HttpResponse res = http.send(req);
 
-        if(res.getStatusCode()==200){
-             return res.getBody();
-        } else return 'Error retrieving data';
+        return res.getStatusCode();
     }
 }

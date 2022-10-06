@@ -42,7 +42,6 @@ export default class Lwc14_SimpleTODO extends LightningElement {
     console.log(this.todoList[arrIndex].status);
 
     console.log(event.target.dataset.index);
-    
   }
 
   clickDeleteHandler(event){

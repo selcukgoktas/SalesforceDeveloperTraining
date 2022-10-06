@@ -34,5 +34,3 @@ public with sharing class Algo1_Apex {
         return (sumofNum==mulofNum);
     }
 }
-
-

@@ -41,7 +41,3 @@ export default class LWC06_CreateAccount extends NavigationMixin(LightningElemen
       });
   }
 }
-
-
-
-
