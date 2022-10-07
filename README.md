@@ -44,6 +44,8 @@ Empty Trigger template to show the differences between switch on operation type 
 ### Trigger6 - Contact Trigger
 If there is no phone on the contact record get phone from related account record and update phone field. 
 
+### Trigger7 - Opportunity Trigger
+Opportunity Stage cannot be set as previous stages. Only one exception. If user has a specific profile he can set previous stage only if stage is close lost..
 
 ### ASYNC Apex
 

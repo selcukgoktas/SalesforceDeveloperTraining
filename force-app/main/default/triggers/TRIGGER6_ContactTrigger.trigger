@@ -8,7 +8,13 @@ trigger TRIGGER6_ContactTrigger on Contact (before insert,before update,before d
     switch on Trigger.operationType {
     when BEFORE_INSERT {
         
-          for(Contact con:Trigger.new){
+         
+        
+        
+    }
+    when AFTER_INSERT {
+        
+         for(Contact con:Trigger.new){
              if(string.isBlank(con.phone)){
                  nophone.add(con);
                   contactAccountMap.put(con.id,con.AccountId);
@@ -25,9 +31,7 @@ trigger TRIGGER6_ContactTrigger on Contact (before insert,before update,before d
             
         }
         
-        
     }
-    when AFTER_INSERT {}
     when BEFORE_UPDATE {}
     when AFTER_UPDATE {}
     when BEFORE_DELETE {}
