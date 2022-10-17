@@ -1,0 +1,43 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 10-17-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<apex:page docType="html-5.0">
+
+  <apex:form>
+    <apex:input id="num1" ></apex:input>
+    <apex:input id="num2" ></apex:input>
+    <apex:commandButton value="+" onclick="sum()"></apex:commandButton>
+
+    <br />
+   <apex:outputText id="result" ></apex:outputText>
+    
+    <script> 
+      function sum(){
+
+          var numx= document.getElementById('{!$Component.num1}').value;
+          var numy= document.getElementById('{!$Component.num2}').value;
+
+         
+          var result = parseInt(numx)+parseInt(numy);
+
+         
+          document.getElementById('{!$Component.result}').innerText=result;
+
+          console.log(numx);
+          console.log(numy);
+          alert(result);
+
+          
+      }
+      
+
+
+    
+    </script>
+
+  </apex:form>
+</apex:page>
