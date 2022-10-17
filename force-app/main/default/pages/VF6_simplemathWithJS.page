@@ -11,6 +11,9 @@
     <apex:input id="num1" ></apex:input>
     <apex:input id="num2" ></apex:input>
     <apex:commandButton value="+" onclick="sum()"></apex:commandButton>
+    <apex:commandButton value="-" onclick="sub()"></apex:commandButton>
+    <apex:commandButton value="x" onclick="mul()"></apex:commandButton>
+    <apex:commandButton value="/" onclick="div()"></apex:commandButton>
 
     <br />
    <apex:outputText id="result" ></apex:outputText>
@@ -33,9 +36,59 @@
 
           
       }
-      
+      function sub(){
+
+var numx= document.getElementById('{!$Component.num1}').value;
+var numy= document.getElementById('{!$Component.num2}').value;
 
 
+var result = parseInt(numx)-parseInt(numy);
+
+
+document.getElementById('{!$Component.result}').innerText=result;
+
+console.log(numx);
+console.log(numy);
+alert(result);
+
+
+}
+     
+function mul(){
+
+var numx= document.getElementById('{!$Component.num1}').value;
+var numy= document.getElementById('{!$Component.num2}').value;
+
+
+var result = parseInt(numx)*parseInt(numy);
+
+
+document.getElementById('{!$Component.result}').innerText=result;
+
+console.log(numx);
+console.log(numy);
+alert(result);
+
+
+}
+
+function div(){
+
+var numx= document.getElementById('{!$Component.num1}').value;
+var numy= document.getElementById('{!$Component.num2}').value;
+
+
+var result = parseInt(numx)/parseInt(numy);
+
+
+document.getElementById('{!$Component.result}').innerText=result;
+
+console.log(numx);
+console.log(numy);
+alert(result);
+
+
+}
     
     </script>
 
