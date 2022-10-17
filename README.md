@@ -110,6 +110,13 @@ All related visualforce page are prefix with **VF3\_**
 Bulk update available Standard list Controller visual force page example.
 All related visualforce page are prefix with **VF4\_**
 
+
+### Visual Force 5 - Visualforce with Javascript 
+
+In this example we will use javascript inside the visualforce pages. 
+
+
+
 ## Aura Lightning Component
 
 ### Aura1 - Simple Calculator without Attribute Tag

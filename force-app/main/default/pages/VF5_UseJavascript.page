@@ -1,0 +1,37 @@
+<apex:page id="page">
+
+
+ 
+
+
+
+
+    <apex:form id="form1">
+
+      Your Message : <apex:inputText onchange="examplejs()" id="message"  />
+      
+      
+        <script>
+              
+              function examplejs(){
+        
+                var msg = document.getElementById('{!$Component.message}').value;
+        
+                console.log(msg);
+        
+                
+              }
+            
+            
+        </script>
+
+    
+
+    </apex:form>
+
+
+    
+
+
+
+</apex:page>

@@ -1,10 +1,3 @@
-/**
- * @description       : 
- * @author            : Selçuk GÖKTAŞ
- * @group             : 
- * @last modified on  : 10-06-2022
- * @last modified by  : Selçuk GÖKTAŞ
-**/
 @RestResource(urlMapping='/api/webhooks/githubtest/*')
 global with sharing class webhookGithub {
     
@@ -17,7 +10,7 @@ global with sharing class webhookGithub {
         String hashedVal = req.headers.get('X-Hub-Signature-256');
         Blob reqBody=req.requestBody;
         
-        Blob hmac = Crypto.generateMac('hmacSHA256', reqBody, Blob.valueOf('your code here'));
+        Blob hmac = Crypto.generateMac('hmacSHA256', reqBody, Blob.valueOf('CCOemh46ci6xn60ycpcfMIrtcOUHHyah'));
         String hmacStr= 'sha256=' + EncodingUtil.convertToHex(hmac);
         
         if(hashedVal==hmacStr){
