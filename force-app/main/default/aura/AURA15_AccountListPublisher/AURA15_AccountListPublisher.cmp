@@ -1,0 +1,47 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 10-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component implements="force:appHostable,
+flexipage:availableForAllPageTypes,
+flexipage:availableForRecordHome,
+force:hasRecordId,
+forceCommunity:availableForAllPageTypes,
+force:lightningQuickAction" access="global"
+controller="AURA15_AccountUIHandler"
+>
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <aura:attribute type="String" name="errorMsg" />
+    <aura:attribute type="Account[]" name="accountList" />
+
+
+    <lightning:messageChannel type="mc__c" aura:id="mc" />
+
+
+
+    <lightning:card footer="Publisher" title="Account List">
+       
+        <p class="slds-p-horizontal_small">
+           
+
+            <aura:iteration items="{!v.accountList}" var="singleAcc">
+                <lightning:tile>
+                    <a class="slds-truncate" data-id="{!singleAcc.Id}" onclick="{!c.publish}" href="#"> {!singleAcc.Name}</a>
+
+                </lightning:tile>
+
+
+            </aura:iteration>
+
+
+
+        </p>
+    </lightning:card>
+
+
+</aura:component>	

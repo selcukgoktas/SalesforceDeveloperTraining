@@ -1,0 +1,55 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 10-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+
+
+  <lightning:messageChannel type="mc__c" onMessage="{!c.handleMessage}" scope="APPLICATION" />
+
+
+
+<aura:attribute type="String" name="recordId" />
+
+<aura:attribute name="fields" type="String[]" default="['Name','Phone','Industry']" />
+
+
+
+<lightning:card footer="Account Subscriber" title="Account Details">
+        <h1>{!v.recordId}</h1>
+
+        <p class="slds-p-horizontal_small">
+          
+         
+      <aura:if isTrue="{!v.recordId}">
+        <lightning:recordForm 
+        aura:id="recordForm"
+        recordId="{!v.recordId}"
+        objectApiName="Account"
+        fields="{!v.fields}"
+        columns="1"
+        mode="edit"
+        />
+
+        <aura:set attribute="else">
+          Record Is Not Selected
+        </aura:set>
+
+      </aura:if>
+
+      
+
+        
+
+
+
+
+
+        </p>
+    </lightning:card>
+
+
+</aura:component>	

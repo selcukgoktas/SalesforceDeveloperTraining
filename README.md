@@ -218,6 +218,10 @@ We create Aura Application, **Application Event**, Component1 and Component2. On
 ### AURA14 - Message Channel
 For this example we use the messagechannel So you should check the **messageChannels** folder and **mc.messageChannel-meta.xml** file.  Also we have two component prefix with Aura14. One is **publisher** other one is **subscriber** . Publisher send payload message by using message channel and subscriber is receiving this message.
 
+### AURA15 - Message Channel and Account List Navigation ( Split View like UI)
+For this example we use the messagechannel So you should check the **messageChannels** folder and **mc.messageChannel-meta.xml** file.  Also we have two component prefix with Aura14. One is **publisher** other one is **subscriber** . Publisher send payload message by using message channel and subscriber is receiving this message. We are sending Record id of the selected account, and subscriber component will receive this record id and show the related account details by using **Lightning Data Service**.
+
+
 
 ### LWC01 - Hello Component
 This is the first LWC Component. 
