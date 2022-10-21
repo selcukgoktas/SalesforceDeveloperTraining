@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 10-21-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+
+<lightning:messageChannel type="mc__c" aura:id="mc" />
+
+<aura:attribute type="String" name="helloMsg" />
+
+
+
+<lightning:card footer="Publisher Component" title="Message Sender">
+  <aura:set attribute="actions">
+      <lightning:button label="Send" onclick="{!c.publish}"/>
+  </aura:set>
+  <p class="slds-p-horizontal_small">
+    <lightning:input name="sendmessage" label="What do you want to send ? " value="{!v.helloMsg}"/>  
+
+
+  </p>
+</lightning:card>
+
+
+
+</aura:component>	

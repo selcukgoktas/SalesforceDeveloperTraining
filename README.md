@@ -115,6 +115,15 @@ All related visualforce page are prefix with **VF4\_**
 
 In this example we will use javascript inside the visualforce pages. 
 
+### Visual Force 6 - Visualforce  Javascript Math Calculations 
+
+Use javascript functions with buttons and make some simple calculations. 
+
+
+### Visual force - Materializecss Example
+This is an example usage of the external CSS and JS file. 
+it includes **staticresources**. 
+
 
 
 ## Aura Lightning Component
