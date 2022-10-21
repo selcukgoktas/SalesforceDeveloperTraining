@@ -215,6 +215,9 @@ We can pass attribute string,integer,function etc.
 
 We create Aura Application, **Application Event**, Component1 and Component2. One of the component do some action and other component will be informed about this. All component in the same application will be informed about this event.
 
+### AURA14 - Message Channel
+For this example we use the messagechannel So you should check the **messageChannels** folder and **mc.messageChannel-meta.xml** file.  Also we have two component prefix with Aura14. One is **publisher** other one is **subscriber** . Publisher send payload message by using message channel and subscriber is receiving this message.
+
 
 ### LWC01 - Hello Component
 This is the first LWC Component. 
