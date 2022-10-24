@@ -2,7 +2,7 @@
   @description       : 
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 07-25-2022
+  @last modified on  : 10-25-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <template>
@@ -26,7 +26,7 @@
           <lightning-layout-item key={todo.id} flexibility="auto" padding="around-small">
 
             <div class="custom-box slds-box slds-p-around_medium slds-text-align_left">
-              <p id="action" class="slds-box slds-text-heading_small"> 
+              <p id={todo.id} class="slds-box slds-text-heading_small"> 
                 <lightning-icon icon-name={todo.status} alternative-text="Approved" title="Approved" data-index={index} onclick={clickApproveHandler}></lightning-icon>
                 <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete" data-index={index} onclick={clickDeleteHandler}></lightning-icon>  {index} - {todo.id} - {todo.item} - </p>
               
