@@ -285,7 +285,7 @@ You should check the file inside the messageChannels folder also. You can't crea
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
 ### LWC14 - Simple TODO Application Single Component
-Simple todo application to learn array and spread operator and LWC for Each iteration. 
+Simple todo application to learn array and spread operator and LWC for Each iteration.  Furthermore you can use Enter, Shift + Enter and Ctrl + Enter keys to increase productivity. 
 
 ### GITHUB USAGE
 This is an example.

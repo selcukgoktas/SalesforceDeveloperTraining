@@ -53,4 +53,23 @@ export default class Lwc14_SimpleTODO extends LightningElement {
 
   }
 
+  keycheck(component, event, helper){
+    console.log(component);
+
+    if (component.which == 10 && component.ctrlKey==true ){
+        // call the js method i.e. this.handlerfilter();
+        
+        console.log('ctrl key + enter ');
+        this.todoList.splice(0,this.todoList.length);
+
+    } else if (component.which == 13 && component.shiftKey==true){
+        // call the js method i.e. this.handlerfilter();
+        console.log('shift key + enter ');
+        this.item='';
+    } else if(component.which == 13 ){
+      this.additemtoListHandler();
+      this.item='';
+    }
+}
+
 }
