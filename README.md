@@ -284,5 +284,8 @@ Lightning Message Channel.
 You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
+### LWC14 - Simple TODO Application Single Component
+Simple todo application to learn array and spread operator and LWC for Each iteration. 
+
 ### GITHUB USAGE
 This is an example.
