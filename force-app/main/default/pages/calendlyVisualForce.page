@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 11-07-2022
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<apex:page>
+
+ 
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
+  <apex:includeScript value="{! $Resource.calendly}"/>
+
+ <script>
+  Calendly.initInlineWidget({
+  url: 'https://calendly.com/YOURCALENDLYLINK'
+  });
+  </script>
+  </div>
+  <!-- Calendly inline widget end -->
+
+
+</apex:page>

@@ -125,6 +125,10 @@ This is an example usage of the external CSS and JS file.
 it includes **staticresources**. 
 
 
+### Visual force - Calendly External Javascript
+This is an example usage of the external JS file. 
+it includes **staticresources**. 
+Update your calendly url from visualforce page script tag.
 
 ## Aura Lightning Component
 
