@@ -1,15 +1,19 @@
 {
-  "orgName": "AppX Package Development Org",
-  "edition": "Developer",
-  "features": ["MaxApexCodeSize:10"],
-  "settings" : {
-      "orgPreferenceSettings": {
-          "s1EncryptedStoragePref2": false
+  "orgName": "Demo Scratch Org",
+  "edition": "Enterprise",
+  "features": ["Communities"],
+  "settings": {
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
       },
-      "securitySettings": {
-          "sessionSettings": {
-              "sessionTimeout": "TwelveHours"
-          }
+      "mobileSettings": {
+          "enableS1EncryptedStoragePref2": true
+      },
+      "omniChannelSettings": {
+          "enableOmniChannel": true
+      },
+      "caseSettings": {
+          "systemUserEmail": "support@acme.com"
       }
   }
 }
