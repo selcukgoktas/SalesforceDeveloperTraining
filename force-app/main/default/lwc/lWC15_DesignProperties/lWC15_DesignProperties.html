@@ -6,9 +6,41 @@
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <template>
+
+  
+
     <lightning-card  variant="Narrow"  title={Title} icon-name="standard:account">
       <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
-      <p class="slds-p-horizontal_small">Card Body Narrow (custom component)</p>
+    
+
+      <div class="page">
+        <div class="field field_v1">
+          <label for="first-name" class="ha-screen-reader">First name</label>
+          <input id="first-name" class="field__input" placeholder="e.g. Stanislav">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">First name</span>
+          </span>
+        </div>
+        <div class="field field_v2">
+          <label for="last-name" class="ha-screen-reader">Last name</label>
+          <input id="last-name"  class="field__input" placeholder={Description}>
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Last name</span>
+          </span>
+        </div>    
+        <div class="field field_v3">
+          <label for="email" class="ha-screen-reader">E-mail</label>
+          <input id="email" class="field__input" placeholder="e.g. melnik909@ya.ru">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">E-mail</span>
+          </span>
+        </div>
+      </div>
+      <div class="linktr">
+        <a href="https://cssisntmagic.substack.com" target="_blank" class="linktr__goal r-link">Subscribe on my email newsletter with CSS tips 💪💪💪</a>
+      </div>
+
+     
       <p slot="footer">{Description}</p>
     </lightning-card>
 </template>

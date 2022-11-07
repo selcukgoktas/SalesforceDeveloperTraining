@@ -293,4 +293,5 @@ Simple todo application to learn array and spread operator and LWC for Each iter
 This example shows how to use design properties.Please check **xml** file to learn more.
 **Title** and **Description** are LWC design properties. When you add these properties you should assign a target to use the properties. Our example is Digital Experience site. You should add **lightningCommunity__Page** and **lightningCommunity__Default** for targets section and use targetconfig for **lightningCommunity__Default**.
 You can use this component on digital experience sites right now. 
+Additionally we add some css and html to change the appearance of the component. 
 
