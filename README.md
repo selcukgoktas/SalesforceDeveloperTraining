@@ -230,12 +230,20 @@ For this example we use the messagechannel So you should check the **messageChan
 ### LWC01 - Hello Component
 This is the first LWC Component. 
 
+lWC01_HelloComponent.png
+
+lwc1.png
+
 ### LWC02 - Track and API Decorators
 Track decorator is not an obligation after Spring 20 update but still can be used for some place. Object data must be used track decorator.
+lwc2.png
+
 
 ### LWC03 - WIRE Decorator
 This get data from apex controller. Just retrieve the Last 10 Account records. 
 Apex controller method must be annotate with **@AuraEnabled(cacheable=true)**
+
+lwc3.png
 
 
 ### LWC04 - With and Without WIRE Decorator
@@ -245,18 +253,28 @@ If you are using without wiring you should make apex aura annotation without cac
 **@AuraEnabled(cacheable=true) : with WIRE**
 **@AuraEnabled : without WIRE**
 
+lwc4.png
+
 ### LWC05 - Call Apex for Simple Calculator
 This will pass the parameters what apex asks and get the returned result that pass these data to the LWC UI.
+
+lwc5.png
+
+
 
 ### LWC06 - Lightning Data Service Create Records without APEX
 Create Account with LDS
 ShowToastEvent
 NavigationMixin usages.
 
+lwc6.png
+
 ### LWC07 - Quick Update with lightning-record-form
 Read recordid from the page. **ACCOUNT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
+
+lwc7.png
 
 
 ### LWC08 - Quick Update with lightning-record-form
@@ -264,18 +282,27 @@ Read recordid from the page. **CONTACT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
 
+lwc8.png
+
 ### LWC09 - MAP on the Contact Records
 **Map** and **Wire** Decorator to collect the contact data.
 ```
 import { getRecord } from 'lightning/uiRecordApi';
 ```
+lwc9.png
+
 
 ### LWC10 - LWC and AURA interoperability
 Colorpickerlwc10 is a child component and only has a color picker. When you select a color
 it fire an event. Aura component is parent component and when an event fired it will get this and conver the color of the text. There is also aura app to see the preview. All component contain **LWC10** term. 
+lwc10a.png
+lwc10b.png
+
 
 ### LWC11 - LWC Barcod Scanned Template.
 It's empty barcod scanner template. You can valid barcods and see the results on lightning-card as a simple text. But you can create more efficient projects with them. Such as super market stock management or creating billing by only scanning the product barcods. Its up to your imagination.
+
+lwc11.png
 
 
 ### LWC12 - Communication between parent and child.
@@ -283,14 +310,20 @@ From Parent to child @api decorator is enough but if you want to send data from 
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/reference_decorators
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events
 
+lwc12.png
+
 ### LWC13 - Communication between independent component.
 Lightning Message Channel.
 You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
+lwc13.png
+
+
 ### LWC14 - Simple TODO Application Single Component
 Simple todo application to learn array and spread operator and LWC for Each iteration.  Furthermore you can use Enter, Shift + Enter and Ctrl + Enter keys to increase productivity. 
 
+lwc14.png
 
 
 ### LWC15 - Design Properties
@@ -299,7 +332,12 @@ This example shows how to use design properties.Please check **xml** file to lea
 You can use this component on digital experience sites right now. 
 Additionally we add some css and html to change the appearance of the component. 
 
+![LWC15 - Design Properties](images/lwc15DX.png?raw=true "LWC15 - Design Properties")
+
+
+
 ### LWC16 - Create Pickist ( Combobox ) from Salesforce Records
 This component retreive account data and show as a combobox. Standard combobox has only label and value option. Bu with Javascript we will add another field **Industry** and handleChange method with the help of the array filter can help us to return more than one value just as **FLOW.**
 **LWC16** prefix apex also help to create this component. 
-![LWC 16 Combobox Componentt](images/lwc16.png?raw=true "LWC 16 Combobox Component")
+
+![LWC 16 Combobox Component](images/lwc16.png?raw=true "LWC 16 Combobox Component")
