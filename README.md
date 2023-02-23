@@ -230,21 +230,22 @@ For this example we use the messagechannel So you should check the **messageChan
 ### LWC01 - Hello Component
 This is the first LWC Component. 
 
-lWC01_HelloComponent.png
+![LWC01 - Hello Component](images/lWC01_HelloComponent.png?raw=true "LWC01 - Hello Component")
+![LWC01 - Hello Component](images/lwc1.png?raw=true "LWC01 - Hello Component")
 
-lwc1.png
+
 
 ### LWC02 - Track and API Decorators
 Track decorator is not an obligation after Spring 20 update but still can be used for some place. Object data must be used track decorator.
-lwc2.png
 
+![LWC02 - Track and API Decorators](images/lwc2.png?raw=true "LWC02 - Track and API Decorators")
 
 ### LWC03 - WIRE Decorator
 This get data from apex controller. Just retrieve the Last 10 Account records. 
 Apex controller method must be annotate with **@AuraEnabled(cacheable=true)**
 
-lwc3.png
 
+![LWC03 - WIRE Decorator](images/lwc3.png?raw=true "LWC03 - WIRE Decorator")
 
 ### LWC04 - With and Without WIRE Decorator
 This will show the difference **with / without** wire decorator call apex controller. 
@@ -253,13 +254,15 @@ If you are using without wiring you should make apex aura annotation without cac
 **@AuraEnabled(cacheable=true) : with WIRE**
 **@AuraEnabled : without WIRE**
 
-lwc4.png
+
+![LWC04 - With and Without WIRE Decorator](images/lwc4.png?raw=true "LWC04 - With and Without WIRE Decorator")
+
 
 ### LWC05 - Call Apex for Simple Calculator
 This will pass the parameters what apex asks and get the returned result that pass these data to the LWC UI.
 
-lwc5.png
 
+![LWC05 - Call Apex for Simple Calculator](images/lwc5.png?raw=true "LWC05 - Call Apex for Simple Calculator")
 
 
 ### LWC06 - Lightning Data Service Create Records without APEX
@@ -267,14 +270,17 @@ Create Account with LDS
 ShowToastEvent
 NavigationMixin usages.
 
-lwc6.png
+
+![LWC06 - Lightning Data Service Create Records without APEX](images/lwc6.png?raw=true "LWC06 - Lightning Data Service Create Records without APEX")
+
 
 ### LWC07 - Quick Update with lightning-record-form
 Read recordid from the page. **ACCOUNT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
 
-lwc7.png
+
+![LWC07 - Quick Update with lightning-record-form](images/lwc7.png?raw=true "LWC07 - Quick Update with lightning-record-form")
 
 
 ### LWC08 - Quick Update with lightning-record-form
@@ -282,48 +288,56 @@ Read recordid from the page. **CONTACT**
 Update account record with lightning-record-form
 Show toast message for succesfully update operation.
 
-lwc8.png
+
+![LWC08 - Quick Update with lightning-record-form](images/lwc8.png?raw=true "LWC08 - Quick Update with lightning-record-form")
+
 
 ### LWC09 - MAP on the Contact Records
 **Map** and **Wire** Decorator to collect the contact data.
 ```
 import { getRecord } from 'lightning/uiRecordApi';
 ```
-lwc9.png
 
+![LWC09 - MAP on the Contact Records](images/lwc9.png?raw=true "LWC09 - MAP on the Contact Records")
 
 ### LWC10 - LWC and AURA interoperability
 Colorpickerlwc10 is a child component and only has a color picker. When you select a color
 it fire an event. Aura component is parent component and when an event fired it will get this and conver the color of the text. There is also aura app to see the preview. All component contain **LWC10** term. 
-lwc10a.png
-lwc10b.png
+
+
+![LWC10 - LWC and AURA interoperability](images/lwc10a.png?raw=true "LWC10 - LWC and AURA interoperability")
+![LWC10 - LWC and AURA interoperability](images/lwc10b.png?raw=true "LWC10 - LWC and AURA interoperability")
 
 
 ### LWC11 - LWC Barcod Scanned Template.
 It's empty barcod scanner template. You can valid barcods and see the results on lightning-card as a simple text. But you can create more efficient projects with them. Such as super market stock management or creating billing by only scanning the product barcods. Its up to your imagination.
 
-lwc11.png
 
+![ LWC11 - LWC Barcod Scanned Template.](images/lwc11.png?raw=true " LWC11 - LWC Barcod Scanned Template.")
 
 ### LWC12 - Communication between parent and child.
 From Parent to child @api decorator is enough but if you want to send data from child to parent you have to use Custom Event.
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/reference_decorators
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events
 
-lwc12.png
+
+![LWC12 - Communication between parent and child.](images/lwc12.png?raw=true "LWC12 - Communication between parent and child.")
+
 
 ### LWC13 - Communication between independent component.
 Lightning Message Channel.
 You should check the file inside the messageChannels folder also. You can't create it on salesforce setup currently.
 https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel
 
-lwc13.png
+
+![LWC13 - Communication between independent component.](images/lwc13.png?raw=true "LWC13 - Communication between independent component.")
 
 
 ### LWC14 - Simple TODO Application Single Component
 Simple todo application to learn array and spread operator and LWC for Each iteration.  Furthermore you can use Enter, Shift + Enter and Ctrl + Enter keys to increase productivity. 
 
-lwc14.png
+
+![LWC14 - Simple TODO Application Single Component](images/lwc14.png?raw=true "LWC14 - Simple TODO Application Single Component")
 
 
 ### LWC15 - Design Properties
