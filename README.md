@@ -302,3 +302,4 @@ Additionally we add some css and html to change the appearance of the component.
 ### LWC16 - Create Pickist ( Combobox ) from Salesforce Records
 This component retreive account data and show as a combobox. Standard combobox has only label and value option. Bu with Javascript we will add another field **Industry** and handleChange method with the help of the array filter can help us to return more than one value just as **FLOW.**
 **LWC16** prefix apex also help to create this component. 
+![LWC 16 Combobox Componentt](images/lwc16.png?raw=true "LWC 16 Combobox Component")
