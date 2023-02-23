@@ -2,7 +2,7 @@
   @description       : 
   @author            : Selçuk GÖKTAŞ
   @group             : 
-  @last modified on  : 11-07-2022
+  @last modified on  : 11-08-2022
   @last modified by  : Selçuk GÖKTAŞ
 -->
 <apex:page>
@@ -11,11 +11,11 @@
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
-  <apex:includeScript value="{! $Resource.calendly}"/>
+  <apex:includeScript value="{!URLFOR($Resource.calendly, '/widget.js')}"/>
 
  <script>
   Calendly.initInlineWidget({
-  url: 'https://calendly.com/YOURCALENDLYLINK'
+  url: 'https://calendly.com/salesforceisvpartner'
   });
   </script>
   </div>

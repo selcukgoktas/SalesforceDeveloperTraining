@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 02-24-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    
+  <lightning-card  variant="Narrow"  title="Combobox" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    
+    <div class="slds-p-horizontal_small">
+      <lightning-combobox
+            name="progress"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+    
+
+          </div>
+    <p slot="footer">Selected value is: {value} and industry : {Industry}</p>
+  </lightning-card>
+
+</template>
