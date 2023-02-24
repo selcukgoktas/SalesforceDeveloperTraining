@@ -4,6 +4,10 @@ Selçuk GÖKTAŞ [Linkedin](https://www.linkedin.com/in/selcukgoktas/)
 
 # Salesforce Developer Notes
 
+If you are new salesforce Development You can follow the link and start learning topic by topic. This Repository is not related the document below. The document may contain inclass examples and some notes to the students. But this repository contains some critical topics. Both of them is designed to support in class exercises. 
+
+Students must be prepared from this repo and document below before attending the courses. 
+
 [Visit Site](https://selcukgoktas.github.io/Salesforce-Developer-Guide/)
 
 # Contents
