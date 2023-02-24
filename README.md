@@ -429,3 +429,10 @@ It may be also used internal Salesforce and Experience Cloud even Guest Users.
 ![LWC17 - Record Edit Form For DX Guest User](images/lwc17.png?raw=true "LWC17 - Record Edit Form For DX Guest User")
 ![LWC17 - Record Edit Form For DX Guest User](images/lwc17a.png?raw=true "LWC17 - Record Edit Form For DX Guest User")
 ![LWC17 - Record Edit Form For DX Guest User](images/lwc17b.png?raw=true "LWC17 - Record Edit Form For DX Guest User")
+
+
+### LWC18 - Record Edit Form with Combobox
+Combobox is not natively part of the Lightning Record Edit Form but in this example we put the combobox inside the record edit form. Then we can populate a standard or custom field of the object.  In this example sales representative can select the product on lead creation. 
+
+
+![LWC18 - Record Edit Form with Combobox](images/lwc18.png?raw=true "LWC18 - Record Edit Form with Combobox")

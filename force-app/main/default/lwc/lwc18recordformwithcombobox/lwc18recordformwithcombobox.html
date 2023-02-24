@@ -1,0 +1,66 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 02-24-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    
+  <template if:true={show}>
+  <lightning-card  variant="Narrow"  title="Lead Creation" icon-name="standard:account">
+    <div class="slds-p-horizontal_small">
+
+      <lightning-record-edit-form
+      object-api-name={objectApiName}>
+
+        <lightning-input-field field-name={firstname}> </lightning-input-field>
+        <lightning-input-field field-name={lastname}> </lightning-input-field>
+        <lightning-input-field field-name={address}> </lightning-input-field>
+        <lightning-input-field field-name={email}> </lightning-input-field>
+        <lightning-input-field field-name={phone}> </lightning-input-field>
+
+       
+          <lightning-input-field field-name={company} value={selectedAccount}> </lightning-input-field>
+        
+  
+
+        <div class="slds-hide">
+          <lightning-input-field field-name={description} value={selectedproduct}> </lightning-input-field>
+        </div>
+      
+
+      <lightning-combobox
+            name="product"
+            label="Product"
+            value={value}
+            placeholder="Select"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+
+      <div class="slds-var-m-top_medium">
+          <lightning-button variant="brand" type="submit" label="Save" onclick={clickHandler}>
+          </lightning-button>
+      </div>
+     </lightning-record-edit-form>
+
+
+     </div>
+
+
+
+
+    <p slot="footer">Card Footer {selectedproduct} </p>
+  </lightning-card>
+
+</template>
+
+<template if:false={show}>
+  <lightning-card  variant="Narrow"  title="success" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small">thank you for your response</p>
+    <p slot="footer">Card Footer</p>
+  </lightning-card>
+</template>
+</template>
