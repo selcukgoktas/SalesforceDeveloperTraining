@@ -136,7 +136,7 @@ Use javascript functions with buttons and make some simple calculations.
 This is an example usage of the external CSS and JS file. 
 it includes **staticresources**. 
 
-![Visual force - Materializecss Example](images/materialize.png?raw=true "Visual force - Materializecss Example")
+![Visual force - Materializecss Example](images/materiaize.png?raw=true "Visual force - Materializecss Example")
 
 
 ### Visual force - Calendly External Javascript
