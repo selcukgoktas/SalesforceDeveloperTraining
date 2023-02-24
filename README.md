@@ -8,7 +8,7 @@ If you are new salesforce Development You can follow the link and start learning
 
 Students must be prepared from this repo and document below before attending the courses. 
 
-[Visit Site](https://selcukgoktas.github.io/Salesforce-Developer-Guide/)
+[Developer Notes From simple Apex to Advanced Deployment Topics ](https://selcukgoktas.github.io/Salesforce-Developer-Guide/)
 
 # Contents
 
