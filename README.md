@@ -1,6 +1,6 @@
 # Salesforce Developer Training
 
-Selçuk GÖKTAŞ [Linkedin](https://www.linkedin.com/in/selcukgoktas/)
+Selçuk GÖKTAŞ [You can contact Linkedin for Business Inquires](https://www.linkedin.com/in/selcukgoktas/)
 
 # Salesforce Developer Notes
 
