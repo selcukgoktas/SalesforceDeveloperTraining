@@ -1,3 +1,10 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 02-24-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
 <apex:page id="page">
 
 
@@ -14,7 +21,7 @@
         <script>
               
               function examplejs(){
-        
+               
                 var msg = document.getElementById('{!$Component.message}').value;
         
                 console.log(msg);
