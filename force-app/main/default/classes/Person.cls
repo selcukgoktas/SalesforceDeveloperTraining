@@ -2,13 +2,13 @@
  * @description       : 
  * @author            : Selçuk GÖKTAŞ
  * @group             : 
- * @last modified on  : 01-09-2024
+ * @last modified on  : 01-10-2024
  * @last modified by  : Selçuk GÖKTAŞ
 **/
-public virtual class Person {
+public virtual class Person implements PersonInterface{
 
-    protected String NationalId;
-    protected String Name;
+    private String NationalId;
+    private String Name;
     private Integer Age;
     
     public String getName(){
@@ -18,7 +18,12 @@ public virtual class Person {
         return Age;
     }
 
-    public Person(String Name, Integer Age){
+    public String getNationalId(){
+        return NationalId;
+    }
+
+    public Person(String NationalId,String Name, Integer Age){
+        this.NationalId=NationalId;
         this.Name=Name;
         this.Age=Age;
     }
