@@ -1,0 +1,31 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 05-24-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card 
+                title="Signature Capturing using LWC" 
+                icon-name="custom:custom30">
+    <div class="c-container"> 
+        <div style="text-align: center; "> 
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                Sign Here
+            </h2>            
+            <p class="slds-m-bottom_small"> 
+                <canvas name="canvasItem" width="400" height="300" style="border:2px solid rgb(136, 135, 135);
+                background: transparent;"></canvas>
+            </p>
+            <p class="slds-m-bottom_small"> 
+            <lightning-button variant="brand" label="Save" title="Save" 
+                onclick={handleSaveClick} class="slds-m-left_x-small"></lightning-button>
+            
+            <lightning-button variant="brand" label="Clear" title="Clear" 
+                onclick={handleClearClick} class="slds-m-left_x-small"></lightning-button>
+            </p>
+        </div>       
+    </div>
+    </lightning-card>
+</template>

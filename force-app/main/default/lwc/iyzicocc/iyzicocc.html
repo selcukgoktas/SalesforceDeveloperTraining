@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 10-05-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+
+  <lightning-card  variant="Narrow"  title="Iyzico" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" 
+    onclick={showModal}
+    variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <div class="slds-p-horizontal_small">
+
+    
+     
+
+        <!--   IYZICO HTML 3dSecure Screen    -->
+        <div class="iyzipay" lwc:dom="manual" style="height: 300px;"></div>  
+    
+    
+    
+   
+
+    </div>
+
+
+
+    <p slot="footer">Card Footer</p>
+  </lightning-card>
+
+
+
+ 
+</template>

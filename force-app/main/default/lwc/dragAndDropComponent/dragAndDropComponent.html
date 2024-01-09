@@ -1,0 +1,74 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 05-24-2023
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+  <lightning-layout vertical-align="stretch" multiple-rows="true" class="x-large">
+      <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+          <div class="slds-box slds-p-around_medium slds-text-align_center">
+              <div class="slds-text-heading_large">New Task</div>
+              <template if:true={taskNewList}>
+                  <template for:each={taskNewList} for:item="data">
+                      <div key={data.Id} draggable="true" id={data.Id} data-id={data.Id} ondragstart={taskDragStart} ondragend={taskDragEnd} class="slds-p-around_small">
+                          <lightning-card  variant="Narrow" title={data.Subject} icon-name="standard:today">
+                              <div class="slds-p-horizontal_small">
+                                  <template if:true={data.ContactName}>
+                                      Contact Name - <lightning-formatted-url value={data.WhoId} label={data.ContactName} target="_blank" ></lightning-formatted-url><br/><br/>
+                                  </template>
+                                  <template if:true={data.AccountName}>
+                                      Account Name - <lightning-formatted-url value={data.WhatId} label={data.AccountName} target="_blank" ></lightning-formatted-url><br/>
+                                  </template>
+                              </div>
+                          </lightning-card>
+                      </div>
+                  </template>
+              </template>
+          </div>
+      </lightning-layout-item>
+      <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+          <div class="slds-text-heading_large">In Progress Task</div>
+          <div id="InProgress" style="height:100%" data-role="drop-target" ondrop={handleDrop} ondragenter={handleDragEnter} ondragover={handleDragOver} ondragleave={handleDragLeave}>
+              <template if:true={taskInProgressList}>
+                  <template for:each={taskInProgressList} for:item="data">
+                      <div key={data.Id} draggable="true" id={data.Id} data-id={data.Id} ondragstart={taskDragStart} ondragend={taskDragEnd} class="slds-p-around_small">
+                          <lightning-card style="width: 50px;"  variant="Narrow" title={data.Subject} icon-name="custom:custom18">
+                              <div class="slds-p-horizontal_small">
+                                  <template if:true={data.ContactName}>
+                                      Contact Name - <lightning-formatted-url value={data.WhoId} label={data.ContactName} target="_blank" ></lightning-formatted-url><br/><br/>
+                                  </template>
+                                  <template if:true={data.AccountName}>
+                                      Account Name - <lightning-formatted-url value={data.WhatId} label={data.AccountName} target="_blank" ></lightning-formatted-url><br/>
+                                  </template>
+                              </div>
+                          </lightning-card>
+                      </div>
+                  </template>
+              </template>
+          </div>
+      </lightning-layout-item>
+      <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+          <div class="slds-text-heading_large">Completed Task</div>
+          <div id="completed" style="height:100%" data-role="drop-target" ondrop={handleDrop} ondragenter={handleDragEnter} ondragover={handleDragOver} ondragleave={handleDragLeave}>
+              <template if:true={taskCompletedList}>
+                  <template for:each={taskCompletedList} for:item="data">
+                      <div key={data.Id} draggable="true" id={data.Id} data-id={data.Id} ondragstart={taskDragStart} ondragend={taskDragEnd} class="slds-p-around_small">
+                          <lightning-card style="width: 50px;"  variant="Narrow" title={data.Subject} icon-name="standard:resource_preference">
+                              <div class="slds-p-horizontal_small">
+                                  <template if:true={data.ContactName}>
+                                      Contact Name - <lightning-formatted-url value={data.WhoId} label={data.ContactName} target="_blank" ></lightning-formatted-url><br/><br/>
+                                  </template>
+                                  <template if:true={data.AccountName}>
+                                      Account Name - <lightning-formatted-url value={data.WhatId} label={data.AccountName} target="_blank" ></lightning-formatted-url><br/>
+                                  </template>
+                              </div>
+                          </lightning-card>
+                      </div>
+                  </template>
+              </template>
+          </div>
+      </lightning-layout-item>
+  </lightning-layout>
+</template>
