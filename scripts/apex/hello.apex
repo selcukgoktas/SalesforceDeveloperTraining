@@ -1,10 +1,16 @@
-// Use .apex files to store anonymous Apex.
-// You can execute anonymous Apex in VS Code by selecting the
-//     apex text and running the command:
-//     SFDX: Execute Anonymous Apex with Currently Selected Text
-// You can also execute the entire file by running the command:
-//     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+// Anonymous Window
+
+Person person = New Person('Selcuk',42);
+system.debug('NAME : '+person.getName());
+system.debug('AGE : '+person.getAge());
+// person.NationalId='111111'; // [ERROR] Variable is not visible: Person.NationalId
+
+Employee employee = New Employee('22222','Alex',42);
+
+employee.updatePerson('Alex Victor',42);
+
+
+system.debug('NAME : '+employee.getName());
+system.debug('AGE : '+employee.getAge());
+system.debug('NATIONAL ID : ' + employee.getNationalId());
