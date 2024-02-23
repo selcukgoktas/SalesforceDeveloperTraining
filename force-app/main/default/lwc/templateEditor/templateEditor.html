@@ -1,0 +1,50 @@
+<!--
+  @description       : 
+  @author            : Selçuk GÖKTAŞ
+  @group             : 
+  @last modified on  : 02-23-2024
+  @last modified by  : Selçuk GÖKTAŞ
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="Document Template" icon-name={iconname}>
+      <lightning-button-icon  icon-name="utility:save" 
+      onclick={handleSave}
+      variant="border-filled" alternative-text="Create Template" slot="actions"></lightning-button-icon>
+
+      <lightning-button-icon  icon-name="utility:arrow_bottom" 
+      onclick={addDescription}
+      variant="border-filled" alternative-text="update Record" slot="actions"></lightning-button-icon>
+
+
+      <p class="slds-p-horizontal_small">
+
+        <lightning-combobox
+            name="picklist"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+
+        <lightning-input type="text" name ="title" label="Template Title" value={titleUI}
+        onchange={handleChange}></lightning-input>
+
+       
+    <lightning-input-rich-text
+    name="body"
+    placeholder={placeholder}
+    value={myVal}
+    label-visible="true"
+    required = {required}
+    label={label}
+    formats={allowedFormats}
+    onchange={handleChange}
+   ></lightning-input-rich-text>
+
+
+      </p>
+      <p slot="footer">Selçuk GÖKTAŞ</p>
+    </lightning-card>
+
+</template>

@@ -1,45 +1,32 @@
 
 // Anonymous Window
 
-Person Person = New Person('11111','Ali',28);
+EmployeeDeveloper devAli = New EmployeeDeveloper('11111','Ali',28);
 
-system.debug('Standard Person :  ' + Person.getNationalId() 
-                                +'/ ' +Person.getName()+' / ' 
-                                    + Person.getAge());
+system.debug('devAli  :  ' + devAli.getNationalId() 
+                                +'/ ' +devAli.getName()+' / ' 
+                                    + devAli.getAge() + ' / '
+                                    );
 
-Employee Employee = New Employee('22222','Ayşe',33);
-Employee.setWage(11402.32);
-Employee.setTitle('Aşgari Ücretli');
-Employee.setDepartment('Satış Temsilcisi');
+Employee empAli = (Employee)devAli;
 
-system.debug('Employee  :  ' + Employee.getNationalId() 
-                                +'/ ' +Employee.getName()+' / ' 
-                                    + Employee.getAge() + ' / '
-                                    + Employee.getTitle() + ' / '
-                                    + Employee.getWage() );
-Employee.increaseWage(49);
-
-system.debug('Employee  :  ' + Employee.getNationalId() 
-                                +'/ ' +Employee.getName()+' / ' 
-                                    + Employee.getAge() + ' / '
-                                    + Employee.getTitle() + ' / '
-                                    + Employee.getWage() );
+system.debug('empAli  :  ' + empAli.getNationalId() 
+                                +'/ ' +empAli.getName()+' / ' 
+                                    + empAli.getAge() + ' / '
+                                    );
 
 
-EmployeeDeveloper developer = New EmployeeDeveloper('3333','Selçuk',42);
-developer.setWage(30000);
-developer.setTitle('Salesforce Developer');
-developer.setDepartment('Project Triforcia');
+Person personAli = (Person)empAli;
 
-system.debug('developer  :  ' + developer.getNationalId() 
-                                +'/ ' +developer.getName()+' / ' 
-                                    + developer.getAge() + ' / '
-                                    + developer.getTitle() + ' / '
-                                    + developer.getWage() );
+system.debug('personAli  :  ' + personAli.getNationalId() 
+                                +'/ ' +personAli.getName()+' / ' 
+                                    + personAli.getAge() + ' / '
+                                    );
 
-developer.increaseWage(49);
-system.debug('developer  :  ' + developer.getNationalId() 
-                                +'/ ' +developer.getName()+' / ' 
-                                    + developer.getAge() + ' / '
-                                    + developer.getTitle() + ' / '
-                                    + developer.getWage() );
+
+Person personAli2 = (Person)devAli;
+
+system.debug('personAli2  :  ' + personAli2.getNationalId() 
+                                +'/ ' +personAli2.getName()+' / ' 
+                                    + personAli2.getAge() + ' / '
+                                    );
