@@ -7,8 +7,11 @@ import updateRecord from '@salesforce/apex/schemaClass.updateRecord'
 
 export default class TemplateEditor extends LightningElement {
 
-  @api objectApiName;
+  @api objectApiName;  // EKLENDİĞİ OBJECT.
   @api recordId;
+
+  @api documentObjectAPI;  // yazilanDilece__c
+  @api fieldname;           // dilekce_body__c
 
   iconname = 'standard:'+this.objectApiName;
 
